@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Campus Buzz | RDS Independent PU College</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb955",
+                    "on-primary-container": "#799dd6",
+                    "surface": "#f9f9ff",
+                    "on-tertiary-container": "#d48c00",
+                    "on-error-container": "#93000a",
+                    "on-background": "#141b2b",
+                    "tertiary-fixed": "#ffddb4",
+                    "surface-container-high": "#e1e8fd",
+                    "surface-bright": "#f9f9ff",
+                    "primary-container": "#003366",
+                    "background": "#f9f9ff",
+                    "surface-dim": "#d3daef",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#dce2f7",
+                    "inverse-surface": "#293040",
+                    "on-primary-fixed": "#001b3c",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#1f477b",
+                    "inverse-on-surface": "#edf0ff",
+                    "tertiary-container": "#492d00",
+                    "surface-variant": "#dce2f7",
+                    "tertiary": "#2d1a00",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#291800",
+                    "primary-fixed-dim": "#a7c8ff",
+                    "on-tertiary-fixed-variant": "#633f00",
+                    "secondary-container": "#94fa81",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e9edff",
+                    "secondary-fixed": "#94fa81",
+                    "primary": "#001e40",
+                    "secondary": "#006e05",
+                    "on-surface": "#141b2b",
+                    "on-secondary-container": "#027507",
+                    "on-secondary-fixed": "#002200",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-tint": "#3a5f94",
+                    "surface-container-low": "#f1f3ff",
+                    "outline": "#737780",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#79dd68",
+                    "on-secondary-fixed-variant": "#005303",
+                    "outline-variant": "#c3c6d1",
+                    "on-surface-variant": "#43474f",
+                    "inverse-primary": "#a7c8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "section-gap-md": "48px",
+                    "section-gap-lg": "80px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Sora"],
+                    "display-hero-mobile": ["Sora"],
+                    "headline-lg": ["Sora"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-xl": ["Sora"],
+                    "display-hero": ["Sora"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                    "display-hero": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-md border-b-2 border-primary shadow-sm h-20">
+<div class="flex justify-between items-center h-full px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary hover:opacity-80 transition-opacity" href="index.html">
+            RDS Independent PU College
+        </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="admissions.html">Admissions</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="academics.html">Academics</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="news.html">Student Life</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="faculty.html">Faculty</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="facilities.html">Facilities</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:scale-95 active:opacity-80 transition-all duration-150">
+                Apply Now
+            </button>
+</div>
+<div class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Campus Buzz -->
+<section class="relative h-[614px] flex items-center overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-3xl">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-sm text-label-sm inline-block mb-6 uppercase tracking-wider">Updates &amp; Media</span>
+<h1 class="font-display-hero text-display-hero text-primary mb-6">Campus Buzz</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Stay informed about the latest milestones, cultural celebrations, and academic breakthroughs at RDS. Your window into the vibrant life of our premier institution.
+                </p>
+</div>
+</div>
+</section>
+<!-- Featured News Card -->
+<section class="py-section-gap-lg px-gutter max-w-container-max mx-auto">
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row">
+<div class="md:w-3/5 h-80 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A wide-angle cinematic shot of the RDS Independent PU College campus building at dusk. The modern architecture is beautifully lit with warm golden lights contrasting against a deep royal blue sky. Students are seen in soft focus walking across a pristine green lawn, creating a sense of prestigious academic community and high-end institutional excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmrCXWJdJN_WpcQWcZNfxNWv2vIut2jPCHx9lLtSCerMGiGxXT0zCmMQyUEpavEhx3M1JZjyLiJE_QCDRoQEDMgUIHDGRDeKZjI3wCXcTleRX3vG_xa4aVgjXBcchlQQDLtxV4z8wsrMzSZysUfmsJsAUlza2O0lThSuoaCoJF0NvHf4ThSYtfv6qpzxlGqLQovmhgtmiUuhzKQfl6UilaDDAxnFwLRemMOGT_9-LOIw25p_pKF99mJh5DHmARVFjZiYpK6K42MGE"/>
+</div>
+<div class="md:w-2/5 p-8 md:p-12 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-6">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-widest">Featured Achievement</span>
+<span class="text-outline text-sm">• Oct 24, 2024</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6 leading-tight">
+                    RDS Students Secure Top Ranks in State Science Olympiad
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
+                    Our brilliant minds have once again proven their academic mettle by securing three positions in the top ten at the National Science Merit competition held in the city last week.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group/btn" href="news.html">
+                    Read Full Story 
+                    <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Latest News Grid -->
+<section class="pb-section-gap-lg px-gutter max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary">Latest Chronicles</h3>
+<p class="text-on-surface-variant mt-2">Explore the recent happenings across our departments.</p>
+</div>
+<div class="hidden md:flex gap-2">
+<button class="p-2 rounded-full border border-primary text-primary hover:bg-primary-container hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">view_list</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="High-resolution close-up of a laboratory setting with RDS college students wearing crisp white lab coats. They are engaged in a chemistry experiment with colorful glass beakers and modern equipment. The lighting is bright and professional, emphasizing a clean, high-tech academic environment in light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcgywsCqf62ew3GaCvGUK78VogUEBpz1_hi5fQviwe43OaKflwcvZZBEABwo0fiDbz9ECjLrXuJHa-CY4yFrqflXRokXevj4vJtbHs7-onRnrsBECZK2G3s4vrOvPDmv7PI2KLlXv5B4AV6reXqs64TlxnSd_amJmnsNIc9Quq5nleZM7Rd6z4uRM-QWSlEHMajxGjB4X1Ny3W8_FOt7CHVmgke924z-9muHP6NfZph_OO6qtKLZatIBEPAu9-wYgN0AJmMbNIGYw"/>
+<div class="absolute top-4 left-4 bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">Academic</div>
+</div>
+<div class="p-6">
+<span class="text-outline text-sm block mb-2">Oct 20, 2024</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-3 leading-snug group-hover:text-surface-tint transition-colors">Annual Inter-College Science Symposium Announced</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Preparations are in full swing for the upcoming 'Techno-Quest' symposium inviting colleges from across the state.</p>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A vibrant shot of a college basketball court during a match. The RDS college colors, royal blue and white, are prominent on the team uniforms. The focus is sharp on a student athlete leaping for a hoop, captured in a freeze-frame with dynamic sunlight filtering through the gymnasium windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNXrUaQMYh98xyMafDEcH3WhrNjg6p5DHGPs_Rkbyh1mBuhpKAuDdewdVyrpfyBybRVl7aiRFxX2JENyQ7C9xZiYpsD-eQ_Ke2RzNOofcctcmz_2LZs4mMWGmlIpYcBIDgak38l5Jv9LHqq61BxH3uhkiriwvnjMINIngCTIHlh4-YEHtXhRYEZRyZ1lI2CM_126hnXQ3Ypq_Ad4__zHXCPqqFV5sK07B8fb3Wv9TW8_Ucwz8D9kIVvN7syY2GvDGNvjgb3lDsh7s"/>
+<div class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">Sports</div>
+</div>
+<div class="p-6">
+<span class="text-outline text-sm block mb-2">Oct 18, 2024</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-3 leading-snug group-hover:text-surface-tint transition-colors">Basketball Team Clinches Regional Championship</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Our men's basketball team defeated the defending champions in a thrilling finale last Saturday.</p>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A modern college auditorium stage set for a cultural event. Bright stage lights illuminate traditional dancers in colorful ethnic wear. The background shows professional AV equipment and a large RDS college logo. The atmosphere is celebratory, artistic, and full of energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-9B04WmPhH4ZAhhrDhgQVSAku_iPcQuHyE04qJscbUEeCBkGoEs9Q4uxbr2R80S6Bs_rVTAFZJwA4DboF3SYKuVHU-yZ5OfrKFHleRG3Yl_BGkpfsW7UqDN2QnBradbstcSdSVXjIXreY2t25pf6x-cAM1pTLTkSy0C4dpctnxO7IQ64jUQZDgYyYqWd--x7DLBkEccgtSjCjhu88Qm_qt7pzXdMrgkAhvQRnKHU2iIUiunpcXHUnDhEIpJoGa18earnbXP_kWaA"/>
+<div class="absolute top-4 left-4 bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">Student Life</div>
+</div>
+<div class="p-6">
+<span class="text-outline text-sm block mb-2">Oct 15, 2024</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-3 leading-snug group-hover:text-surface-tint transition-colors">Varnotsav 2024: A Celebration of Art and Culture</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">A three-day cultural extravaganza showcasing the diverse talents of our creative student body.</p>
+</div>
+</article>
+<!-- Article 4 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A group of smiling diverse students and faculty members standing together in front of the college entrance. They are shaking hands with a corporate guest. The scene is bright and professional, representing career opportunities and industry partnerships in a prestigious educational setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkP21t0GYPg_CwvtJqHQLrwUMmoi4KlQEjBSm1qxQqGir2_N32zb0UCoR3DWsLJgzXpDa2q_BxwL4zPuxo1gJTgt7wyICv67h65aekMb35fGth-JR4DOZ0te532pnV29AR37-4pAq9IhfHDjmOH-F0S-_VHF_Jx4U2qeaVdfrMU-VKA8EKxXoaW3jHrGX-5CdTBBrbuHDnF4kCSfitNZK-UrDnHr66b_2xyGwC7BL3EYahazsJ74F3ah0GA46nQBv1sbSIPQNEfuM"/>
+<div class="absolute top-4 left-4 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-sm text-label-sm">Announcement</div>
+</div>
+<div class="p-6">
+<span class="text-outline text-sm block mb-2">Oct 12, 2024</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-3 leading-snug group-hover:text-surface-tint transition-colors">New Industry Partnership with Global Tech Firm</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">RDS expands its horizons with a strategic MOU for student internships and expert mentorship programs.</p>
+</div>
+</article>
+<!-- Article 5 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="An interior shot of a modern college library with high ceilings and rows of books. Sunlight streams through large windows, illuminating a group of students studying together at a minimalist wooden table. The aesthetic is calm, scholarly, and premium academic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsYS4u72BSICj8jhbSylFZauw-POqF48kqeaZh9J3y3m4NbNdRysYgqn4g5lJNH2Ta4VTxpo1cYCeF2rI69JaXDbmfaBozjb7UXCM_pDqGyOMKwE8vzkVX0MU485awAibQSTFNkxFB5AZkFCsimgjoIo0yeEiNSH4r-o0D8vGtSoUeT67mLnhc67F94RFico8Ve5VZqYGIaPzWmJ3Oa4iB-H3gLVgIWNJXa_THcJsFEB6XeBQ9PlqDvD-JtTYq4i9SiKeyG8t4sNg"/>
+<div class="absolute top-4 left-4 bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">Faculty</div>
+</div>
+<div class="p-6">
+<span class="text-outline text-sm block mb-2">Oct 10, 2024</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-3 leading-snug group-hover:text-surface-tint transition-colors">Faculty Member Receives Prestigious Research Grant</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Dr. Ananya Sharma from the Physics department has been awarded a federal grant for sustainable energy research.</p>
+</div>
+</article>
+<!-- Article 6 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A clean, minimalist close-up of a digital tablet displaying an RDS college app interface. Hands are seen interacting with the touch screen. The background is a soft-focus modern college courtyard. The visual style is tech-forward and clean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3byRNnT6QaEXYZFNsOoxsz_Oa6L-DYtVOAP9yAcbDGhUn7AzPqULMnKBdm_kdM2XtZ7f44tGPeQssrmSSLeJC9gR731EUwHPLDG76FQ_1NKEjz6MiuRqzi-UF5zrW-cX8VYEk3G1x_LNGF1O_JTv0BUvrr15TtxLVup1A-58xkEb6PTpk7YK8qRjJW8tGMKmFu1AVzPlhic-GDDoKyPziMuIDmEt2_bvqEsnYZPx7mKMH3jgYmgZy7PwruK3W4K2wIaOvLSpDXQU"/>
+<div class="absolute top-4 left-4 bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full font-label-sm text-label-sm">Facilities</div>
+</div>
+<div class="p-6">
+<span class="text-outline text-sm block mb-2">Oct 05, 2024</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-3 leading-snug group-hover:text-surface-tint transition-colors">Upgraded Smart Campus App Version 2.0 Live</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Experience seamless campus navigation and real-time schedule updates with our latest digital infrastructure upgrade.</p>
+</div>
+</article>
+</div>
+<div class="mt-12 text-center">
+<button class="border-2 border-primary text-primary px-12 py-3 rounded-full font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all duration-300">
+                Load Older Stories
+            </button>
+</div>
+</section>
+<!-- Newsletter Signup Section -->
+<section class="bg-primary py-section-gap-lg overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="md:w-1/2">
+<h2 class="font-headline-xl text-headline-xl text-on-primary mb-4">Never Miss a Pulse</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80">Subscribe to our weekly newsletter to get the latest achievements and announcements delivered straight to your inbox.</p>
+</div>
+<div class="md:w-5/12 w-full">
+<form class="flex flex-col sm:flex-row gap-4 p-2 bg-on-primary/10 rounded-2xl backdrop-blur-sm border border-on-primary/20">
+<input class="flex-grow bg-transparent border-none text-on-primary placeholder:text-on-primary/50 focus:ring-0 px-6 py-4 rounded-xl font-body-md" placeholder="Enter your email address" required="" type="email"/>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 rounded-xl font-label-sm text-label-sm font-bold hover:scale-95 transition-transform whitespace-nowrap" type="submit">
+                        Subscribe Now
+                    </button>
+</form>
+<p class="mt-4 text-on-primary/60 text-sm text-center md:text-left">By subscribing, you agree to our privacy policy and cookie terms.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-primary dark:bg-surface-container-lowest w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap-md px-gutter py-section-gap-lg max-w-container-max mx-auto text-on-primary dark:text-on-surface">
+<!-- Branding Column -->
+<div class="space-y-6">
+<a class="font-headline-md text-headline-md font-bold text-on-primary dark:text-primary block" href="index.html">
+                RDS Independent PU College
+            </a>
+<p class="font-body-md text-body-md text-on-primary/70 dark:text-on-surface/70">
+                Empowering minds, fostering excellence, and shaping the future of global leaders since 1998.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-on-primary/10 dark:bg-surface-variant flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-on-primary/10 dark:bg-surface-variant flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="contact.html">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-headline-md text-headline-md mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="admissions.html">Admissions</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="facilities.html">Campus Tour</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="#">Alumni Network</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="admissions.html">Scholarships</a></li>
+</ul>
+</div>
+<!-- Legals -->
+<div>
+<h4 class="font-headline-md text-headline-md mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="#">Cookie Policy</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-on-primary dark:hover:text-on-surface transition-colors" href="#">Sitemap</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h4 class="font-headline-md text-headline-md mb-6">Get in Touch</h4>
+<p class="font-body-md text-on-primary/80 dark:text-on-surface/80 mb-4">
+                123 Educational Blvd, Academic Square, City - 560001
+            </p>
+<p class="font-body-md text-on-primary/80 dark:text-on-surface/80">
+                Phone: +91 80 1234 5678<br/>
+                Email: info@rdscollege.edu
+            </p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-8 border-t border-on-primary/10 dark:border-on-surface/10 text-center text-on-primary/60 dark:text-on-surface/60 font-body-md text-body-md">
+        © 2024 RDS Independent PU College. All rights reserved.
+    </div>
+</footer>
+<script>
+    // Simple scroll interaction for the Navbar
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('shadow-md');
+            nav.classList.remove('shadow-sm');
+        } else {
+            nav.classList.add('shadow-sm');
+            nav.classList.remove('shadow-md');
+        }
+    });
+
+    // Form submission micro-interaction
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector('button');
+        const originalText = btn.innerText;
+        btn.innerText = 'Subscribed!';
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        e.target.reset();
+        setTimeout(() => {
+            btn.innerText = originalText;
+            btn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        }, 3000);
+    });
+</script>
+</body></html>

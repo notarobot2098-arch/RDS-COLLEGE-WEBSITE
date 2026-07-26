@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academics | RDS Independent PU College</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#43474f",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#dce2f7",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#edf0ff",
+                        "surface-bright": "#f9f9ff",
+                        "on-tertiary-container": "#d48c00",
+                        "on-background": "#141b2b",
+                        "secondary-container": "#94fa81",
+                        "primary-container": "#003366",
+                        "inverse-surface": "#293040",
+                        "tertiary-fixed": "#ffddb4",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#633f00",
+                        "on-secondary-fixed-variant": "#005303",
+                        "surface": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#027507",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#006e05",
+                        "surface-container-low": "#f1f3ff",
+                        "surface-container-highest": "#dce2f7",
+                        "on-secondary-fixed": "#002200",
+                        "on-primary-fixed": "#001b3c",
+                        "tertiary-container": "#492d00",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#94fa81",
+                        "surface-tint": "#3a5f94",
+                        "primary-fixed": "#d5e3ff",
+                        "on-surface": "#141b2b",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "on-tertiary-fixed": "#291800",
+                        "primary": "#001e40",
+                        "tertiary-fixed-dim": "#ffb955",
+                        "surface-container-high": "#e1e8fd",
+                        "inverse-primary": "#a7c8ff",
+                        "secondary-fixed-dim": "#79dd68",
+                        "surface-container": "#e9edff",
+                        "outline": "#737780",
+                        "background": "#f9f9ff",
+                        "surface-dim": "#d3daef",
+                        "outline-variant": "#c3c6d1",
+                        "tertiary": "#2d1a00",
+                        "on-primary-container": "#799dd6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap-md": "48px",
+                        "container-max": "1280px",
+                        "base": "4px",
+                        "section-gap-lg": "80px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Sora"],
+                        "display-hero-mobile": ["Sora"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Sora"],
+                        "headline-md": ["Sora"],
+                        "display-hero": ["Sora"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                        "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-hero": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-md border-b-2 border-primary/10 shadow-sm">
+<nav class="max-w-[1280px] mx-auto flex justify-between items-center h-20 px-gutter">
+<a class="flex items-center gap-2" href="index.html">
+<span class="font-headline-md text-headline-md font-bold text-primary">RDS College</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="academics.html">Academics</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="admissions.html">Admissions</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="facilities.html">Facilities</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-all">
+<span class="material-symbols-outlined">search</span>
+</button>
+<a class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:shadow-lg transition-transform active:scale-95 inline-block" href="admissions.html">Apply Now</a>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-angle shot of a modern college campus library with floor-to-ceiling windows, sleek wooden tables, and students engaged in collaborative study. The lighting is soft and natural, emphasizing a prestigious and calm academic atmosphere. The color palette is dominated by clean whites, soft grays, and deep navy blue accents, reflecting a premium educational institution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdJwIce15Brw0LiyUuA6QQRMNbTKMHIVwU1ZdzaZ2dHjIeOTx5OSfKgrpD05ALvjkUbhxL7hHTeSpdQuLG79GqPTtnGA1erVhC9yggB4N923lL761e7N5m033CsX5cuYh2JfqXV-UHpakc3vuHl33q8nnrRbyRKV3C3YZax6s0yQA-cKM9MyGx-KxQKjV-xIYJSpYa6BFy29QCwHqlY_CcH0LvV-MkDQT-NbBPNxcWr-Ibmz-xldwLyZyMww8Zwbr8mhI7iGI7Afw"/>
+</div>
+<div class="relative z-20 max-w-[1280px] mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-6">Excellence in Education</span>
+<h1 class="font-display-hero text-display-hero text-primary mb-6 leading-tight">Nurturing Intellectual Growth</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        At RDS Independent PU College, we believe that education extends beyond the classroom. Our holistic approach combines rigorous academic curriculum with character building and competitive edge.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:shadow-xl transition-all hover:-translate-y-1 inline-block" href="#streams">Explore Streams</a>
+<a class="px-8 py-4 rounded-full border border-outline text-primary font-label-sm text-label-sm hover:bg-surface-container-low transition-all inline-block" href="downloads.html">Download Prospectus</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Teaching Methodology (Bento Style) -->
+<section class="py-section-gap-lg max-w-[1280px] mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Our Pedagogical Pillars</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">A structured approach to learning that ensures conceptual clarity and consistent progress for every student.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Conceptual Learning -->
+<div class="p-8 rounded-xl bg-surface-container-low border border-outline-variant hover:shadow-lg transition-all group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary-fixed">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Conceptual Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Moving away from rote memorization towards a deep understanding of core principles and their real-world applications.</p>
+</div>
+<!-- Continuous Assessment -->
+<div class="p-8 rounded-xl bg-secondary-container/20 border border-secondary/10 hover:shadow-lg transition-all group">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container">assignment_turned_in</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Continuous Assessment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Weekly tests and monthly evaluations to track progress and identify areas for improvement in real-time.</p>
+</div>
+<!-- Personal Mentorship -->
+<div class="p-8 rounded-xl bg-surface-container-highest border border-outline-variant hover:shadow-lg transition-all group">
+<div class="w-12 h-12 rounded-lg bg-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary">group</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Personal Mentorship</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">One-on-one guidance sessions to help students navigate academic challenges and career planning.</p>
+</div>
+</div>
+</section>
+<!-- Academic Streams (Asymmetric Layout) -->
+<section class="py-section-gap-lg bg-surface-container-lowest" id="streams">
+<div class="max-w-[1280px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+<div class="order-2 lg:order-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold mb-4 block">STREAM I</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Science Division</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Fuel your curiosity with our state-of-the-art laboratories and a curriculum designed for aspiring engineers and medical professionals.</p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold">1</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-[20px] mb-1">PCMB &amp; PCMC</h4>
+<p class="text-on-surface-variant">Physics, Chemistry, Mathematics, Biology / Computer Science.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold">2</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-[20px] mb-1">Career Paths</h4>
+<p class="text-on-surface-variant">Engineering, Medicine, Pure Sciences, IT, Biotechnology, and Research.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A high-definition image of a student in a bright, modern chemistry laboratory wearing a white lab coat and safety goggles, carefully pipetting a colorful blue liquid. The background is slightly blurred showing sophisticated scientific equipment and glassware. The overall aesthetic is professional, clean, and technologically advanced, dominated by whites and clinical blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0A5GJuBReeDOHGI8hppZuu6DxVDy0837UzD_tjY_JFGYdMHPaw7bbgDhKyQc-OJl1aDfRGY8Hfxj0Z3rhipb364FSYubUmN8_E1C0WaXkhBCOfXPaxoGkRF2ZXvwVLUNoWppMwRkM6UowPa7VtiWXmyXN8hyIc7t9Aq9IZvF2YzDRAg-kDYSzl7moaLCPWVEHXcbZWbYX7bX2aZ1m0r5AXETKv1PckfmPWoyLyxgRsIwvSH-IZtHAllX7OrsXXUHG6iyy3IFGaNY"/>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-card p-6 rounded-xl shadow-xl hidden md:block">
+<p class="font-headline-md text-primary">95%</p>
+<p class="text-label-sm text-on-surface-variant">Practical Success Rate</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A sophisticated business environment style image showing young adults in professional attire engaged in a mock stock market simulation. They are pointing at large digital screens displaying financial charts and data visualizations. The setting is a modern, corporate-style classroom with glass walls and minimalist furniture. The color palette includes professional grays, deep blues, and accents of academic green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIO6KOhy8AzGpC5Rw_EwD1BCNYlWGzrwwtDXxioLzJC0nkHKvGPKMMt-B1woZm_gFJdUyt-o2MAw7TbKZapMi75XjRcQfLcVArI6Pqt7hVqLM_5K7GZit9soFe7ZZpXFJuLJQxk_wdFyHZ-yCVDTAfloxEP9mJGaTlnAtbFIMMaieZndzN2tQWy-J40cuu43CpWTfZi7GjT012HFTqno4MbcSL6Rp7CLa-P2BjHt3tTBt8F4Mr69gHaDXyOH-koNvqhNeaT9A3764"/>
+</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mb-4 block">STREAM II</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Commerce Division</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Master the world of finance, management, and entrepreneurship with our comprehensive commerce program.</p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">1</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-[20px] mb-1">CEBA &amp; SEBA</h4>
+<p class="text-on-surface-variant">Computer Science / Statistics, Economics, Business Studies, Accountancy.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">2</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-[20px] mb-1">Career Paths</h4>
+<p class="text-on-surface-variant">Chartered Accountancy (CA), MBA, Financial Analysis, Law, and CS.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Integrated Coaching -->
+<section class="py-section-gap-lg bg-primary text-on-primary">
+<div class="max-w-[1280px] mx-auto px-gutter">
+<div class="flex flex-col lg:flex-row justify-between items-end gap-8 mb-12">
+<div class="max-w-2xl">
+<h2 class="font-headline-xl text-headline-xl mb-6">Integrated Coaching Programs</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim">We bridge the gap between PU board exams and national-level entrance tests through our seamless integration of curriculum and competitive training.</p>
+</div>
+<div class="flex gap-4">
+<span class="px-6 py-2 border border-primary-fixed-dim/30 rounded-full font-label-sm">NEET</span>
+<span class="px-6 py-2 border border-primary-fixed-dim/30 rounded-full font-label-sm">JEE Mains/Adv</span>
+<span class="px-6 py-2 border border-primary-fixed-dim/30 rounded-full font-label-sm">KCET</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed mb-4 text-3xl">psychology</span>
+<h4 class="font-headline-md text-[18px] mb-2">Expert Faculty</h4>
+<p class="text-sm text-primary-fixed-dim opacity-80">Mentors from premium institutes with years of track record.</p>
+</div>
+<div class="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed mb-4 text-3xl">menu_book</span>
+<h4 class="font-headline-md text-[18px] mb-2">Study Material</h4>
+<p class="text-sm text-primary-fixed-dim opacity-80">Custom-crafted modules focusing on shortcuts and deep concepts.</p>
+</div>
+<div class="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed mb-4 text-3xl">query_stats</span>
+<h4 class="font-headline-md text-[18px] mb-2">Mock Tests</h4>
+<p class="text-sm text-primary-fixed-dim opacity-80">Simulated test environment with computer-based testing modules.</p>
+</div>
+<div class="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed mb-4 text-3xl">insights</span>
+<h4 class="font-headline-md text-[18px] mb-2">Rank Analysis</h4>
+<p class="text-sm text-primary-fixed-dim opacity-80">Detailed performance analytics to boost percentile scores.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Calendar Preview -->
+<section class="py-section-gap-lg max-w-[1280px] mx-auto px-gutter">
+<div class="bg-surface-container rounded-3xl overflow-hidden flex flex-col md:flex-row">
+<div class="p-12 md:w-1/2 flex flex-col justify-center">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Academic Calendar 2024-25</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Stay ahead of the schedule. Our academic year is meticulously planned to balance learning, examination, and extracurricular rejuvenation.</p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span class="font-body-md">Term Start: June 15th</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span class="font-body-md">Mid-term Break: October 10th - 20th</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span class="font-body-md">Annual Exams: March 1st Week</span>
+</li>
+</ul>
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-full w-fit hover:gap-4 transition-all" href="downloads.html">
+<span class="material-symbols-outlined">download</span>
+<span>Download Full Calendar (PDF)</span>
+</a>
+</div>
+<div class="md:w-1/2 bg-white p-8">
+<div class="border border-outline-variant rounded-xl overflow-hidden shadow-inner">
+<div class="bg-surface-container-high p-4 flex justify-between items-center border-b border-outline-variant">
+<span class="font-bold">June 2024</span>
+<div class="flex gap-2">
+<span class="material-symbols-outlined cursor-pointer">chevron_left</span>
+<span class="material-symbols-outlined cursor-pointer">chevron_right</span>
+</div>
+</div>
+<div class="p-4 grid grid-cols-7 gap-2 text-center text-xs">
+<div class="font-bold text-on-surface-variant">S</div><div class="font-bold text-on-surface-variant">M</div><div class="font-bold text-on-surface-variant">T</div><div class="font-bold text-on-surface-variant">W</div><div class="font-bold text-on-surface-variant">T</div><div class="font-bold text-on-surface-variant">F</div><div class="font-bold text-on-surface-variant">S</div>
+<!-- Simple mock calendar days -->
+<div class="py-2 opacity-30">26</div><div class="py-2 opacity-30">27</div><div class="py-2 opacity-30">28</div><div class="py-2 opacity-30">29</div><div class="py-2 opacity-30">30</div><div class="py-2 opacity-30">31</div><div class="py-2">1</div>
+<div class="py-2">2</div><div class="py-2">3</div><div class="py-2">4</div><div class="py-2">5</div><div class="py-2">6</div><div class="py-2">7</div><div class="py-2">8</div>
+<div class="py-2">9</div><div class="py-2">10</div><div class="py-2">11</div><div class="py-2">12</div><div class="py-2">13</div><div class="py-2">14</div><div class="py-2 bg-secondary/20 rounded-full font-bold text-secondary">15</div>
+<div class="py-2">16</div><div class="py-2">17</div><div class="py-2">18</div><div class="py-2">19</div><div class="py-2">20</div><div class="py-2">21</div><div class="py-2">22</div>
+<div class="py-2">23</div><div class="py-2 bg-primary/10 rounded-full font-bold">24</div><div class="py-2">25</div><div class="py-2">26</div><div class="py-2">27</div><div class="py-2">28</div><div class="py-2">29</div>
+</div>
+<div class="p-4 border-t border-outline-variant bg-surface-container-low text-xs">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span>15th: Commencement of Classes</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span>24th: Orientation Ceremony</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-gap-lg bg-on-background">
+<div class="max-w-[1280px] mx-auto px-gutter py-section-gap-md grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-1">
+<a class="font-headline-md text-headline-md font-bold text-primary-fixed mb-6 block" href="index.html">RDS College</a>
+<p class="text-surface-variant/80 text-sm leading-relaxed mb-6">Empowering students to achieve their full potential through quality education and value-driven mentorship since 2004.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-variant/10 flex items-center justify-center text-primary-fixed hover:bg-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">qr_code_2</span></a>
+<a class="w-10 h-10 rounded-full bg-surface-variant/10 flex items-center justify-center text-primary-fixed hover:bg-secondary-fixed transition-colors" href="contact.html"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="academics.html">Academic Calendar</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="index.html">Student Portal</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="faculty.html">Faculty Directory</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="gallery.html">Photo Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="index.html">Privacy Policy</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="index.html">Terms of Service</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="index.html">Refund Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Contact Us</h4>
+<address class="not-italic text-surface-variant/80 text-sm space-y-4">
+<p class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-fixed scale-75">location_on</span> Main Campus Road, Hebbal, Bangalore - 560024</p>
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary-fixed scale-75">call</span> +91 80 2345 6789</p>
+<a class="flex items-center gap-3 hover:text-secondary-fixed transition-colors" href="contact.html"><span class="material-symbols-outlined text-secondary-fixed scale-75">mail</span> info@rdscollege.edu.in</a>
+</address>
+</div>
+</div>
+<div class="border-t border-surface-variant/10 py-6">
+<div class="max-w-[1280px] mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-surface-variant/60 text-xs">© 2024 RDS Independent PU College. All rights reserved.</p>
+<p class="text-surface-variant/60 text-xs">Affiliated to Pre-University Education Board, Karnataka.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

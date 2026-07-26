@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Downloads | RDS Independent PU College</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb955",
+                    "on-primary-container": "#799dd6",
+                    "surface": "#f9f9ff",
+                    "on-tertiary-container": "#d48c00",
+                    "on-error-container": "#93000a",
+                    "on-background": "#141b2b",
+                    "tertiary-fixed": "#ffddb4",
+                    "surface-container-high": "#e1e8fd",
+                    "surface-bright": "#f9f9ff",
+                    "primary-container": "#003366",
+                    "background": "#f9f9ff",
+                    "surface-dim": "#d3daef",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#dce2f7",
+                    "inverse-surface": "#293040",
+                    "on-primary-fixed": "#001b3c",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#1f477b",
+                    "inverse-on-surface": "#edf0ff",
+                    "tertiary-container": "#492d00",
+                    "surface-variant": "#dce2f7",
+                    "tertiary": "#2d1a00",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#291800",
+                    "primary-fixed-dim": "#a7c8ff",
+                    "on-tertiary-fixed-variant": "#633f00",
+                    "secondary-container": "#94fa81",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e9edff",
+                    "secondary-fixed": "#94fa81",
+                    "primary": "#001e40",
+                    "secondary": "#006e05",
+                    "on-surface": "#141b2b",
+                    "on-secondary-container": "#027507",
+                    "on-secondary-fixed": "#002200",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-tint": "#3a5f94",
+                    "surface-container-low": "#f1f3ff",
+                    "outline": "#737780",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#79dd68",
+                    "on-secondary-fixed-variant": "#005303",
+                    "outline-variant": "#c3c6d1",
+                    "on-surface-variant": "#43474f",
+                    "inverse-primary": "#a7c8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "section-gap-md": "48px",
+                    "section-gap-lg": "80px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Sora"],
+                    "display-hero-mobile": ["Sora"],
+                    "headline-lg": ["Sora"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-xl": ["Sora"],
+                    "display-hero": ["Sora"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                    "display-hero": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .file-card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-md border-b-2 border-primary shadow-sm">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary" href="index.html">
+                RDS Independent PU College
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="admissions.html">Admissions</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="academics.html">Academics</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="student-life.html">Student Life</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="faculty.html">Faculty</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="facilities.html">Facilities</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-40" placeholder="Search resources..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm text-label-sm scale-95 active:opacity-80 transition-all hover:shadow-lg">
+                    Apply Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[400px] flex items-center overflow-hidden">
+<div class="relative z-10 px-gutter max-w-container-max mx-auto w-full">
+<div class="max-w-2xl">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-sm text-label-sm mb-6 uppercase tracking-wider">Student Portal</span>
+<h1 class="font-display-hero text-display-hero text-primary mb-6 leading-tight">
+                        Resources &amp; Documents
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Access and download essential institutional materials, academic calendars, and administrative forms in one centralized location.
+                    </p>
+</div>
+</div>
+<div class="absolute right-0 top-0 w-1/3 h-full hidden lg:block opacity-20">
+<div class="w-full h-full bg-gradient-to-l from-primary-fixed to-transparent"></div>
+</div>
+</section>
+<!-- Structured List Section -->
+<section class="py-section-gap-lg px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Category Sidebar -->
+<aside class="lg:col-span-3">
+<div class="sticky top-28 space-y-2">
+<h3 class="font-headline-md text-headline-md text-primary mb-6 px-4">Categories</h3>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary-fixed text-primary font-medium transition-all group" href="#admissions">
+<span class="material-symbols-outlined">how_to_reg</span>
+                            Admissions
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-all" href="#academics">
+<span class="material-symbols-outlined">menu_book</span>
+                            Academics
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-all" href="#student-life">
+<span class="material-symbols-outlined">groups</span>
+                            Student Life
+                        </a>
+<div class="mt-10 p-6 rounded-2xl bg-primary text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-2">Need Help?</h4>
+<p class="font-body-md text-body-md opacity-80 mb-4">Contact the registrar's office for document verification.</p>
+<button class="w-full py-2 bg-on-primary text-primary rounded-lg font-label-sm">Contact Support</button>
+</div>
+</div>
+</aside>
+<!-- Downloads List Container -->
+<div class="lg:col-span-9 space-y-section-gap-md">
+<!-- Admissions Category -->
+<div class="scroll-mt-28" id="admissions">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">how_to_reg</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">Admissions</h2>
+</div>
+<div class="space-y-4">
+<!-- File Card 1 -->
+<div class="glass-card p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 file-card-hover transition-all duration-300">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-red-50 text-red-600 rounded-lg">
+<span class="material-symbols-outlined text-[32px]">picture_as_pdf</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1 leading-tight">College Prospectus &amp; Brochure 2024-25</h4>
+<div class="flex items-center gap-4 text-on-surface-variant text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">file_present</span> PDF Document</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">description</span> 4.8 MB</span>
+</div>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 px-6 py-3 bg-primary text-on-primary rounded-full hover:shadow-lg transition-all scale-95 active:scale-90">
+<span class="material-symbols-outlined">download</span>
+<span>Download</span>
+</button>
+</div>
+<!-- File Card 2 -->
+<div class="glass-card p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 file-card-hover transition-all duration-300">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-red-50 text-red-600 rounded-lg">
+<span class="material-symbols-outlined text-[32px]">picture_as_pdf</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1 leading-tight">Official Application Form</h4>
+<div class="flex items-center gap-4 text-on-surface-variant text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">file_present</span> PDF Document</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">description</span> 1.2 MB</span>
+</div>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 px-6 py-3 bg-primary text-on-primary rounded-full hover:shadow-lg transition-all scale-95 active:scale-90">
+<span class="material-symbols-outlined">download</span>
+<span>Download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Academics Category -->
+<div class="scroll-mt-28" id="academics">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">Academics</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Bento Item: Calendar -->
+<div class="glass-card p-8 rounded-3xl file-card-hover transition-all flex flex-col justify-between">
+<div>
+<div class="mb-6 flex justify-between items-start">
+<div class="p-4 bg-primary-fixed text-primary rounded-2xl">
+<span class="material-symbols-outlined text-[40px]">calendar_month</span>
+</div>
+<span class="text-label-sm px-3 py-1 bg-surface-container-high rounded-full font-medium">Updated 2 days ago</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Annual Academic Calendar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Complete schedule of internal assessments, holidays, and college events for the current year.</p>
+</div>
+<div class="flex items-center justify-between border-t border-outline-variant pt-6">
+<div class="text-label-sm text-on-surface-variant">PDF • 2.5 MB</div>
+<button class="text-primary font-bold flex items-center gap-1 hover:underline">
+                                        Download <span class="material-symbols-outlined">arrow_downward</span>
+</button>
+</div>
+</div>
+<!-- Bento Item: Syllabus -->
+<div class="glass-card p-8 rounded-3xl file-card-hover transition-all flex flex-col justify-between">
+<div>
+<div class="mb-6 flex justify-between items-start">
+<div class="p-4 bg-tertiary-fixed text-tertiary-container rounded-2xl">
+<span class="material-symbols-outlined text-[40px]">assignment</span>
+</div>
+<span class="text-label-sm px-3 py-1 bg-surface-container-high rounded-full font-medium">New Pattern</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Detailed Course Syllabus</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Comprehensive syllabus for Science, Commerce, and Arts streams following state board guidelines.</p>
+</div>
+<div class="flex items-center justify-between border-t border-outline-variant pt-6">
+<div class="text-label-sm text-on-surface-variant">PDF • 15.2 MB</div>
+<button class="text-primary font-bold flex items-center gap-1 hover:underline">
+                                        Download <span class="material-symbols-outlined">arrow_downward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Student Life Category -->
+<div class="scroll-mt-28" id="student-life">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">Student Life</h2>
+</div>
+<div class="space-y-4">
+<!-- File Card 3 -->
+<div class="glass-card p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 file-card-hover transition-all duration-300 bg-white/40">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-secondary-container/20 text-secondary rounded-lg">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1 leading-tight">Student Handbook &amp; Code of Conduct</h4>
+<div class="flex items-center gap-4 text-on-surface-variant text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">file_present</span> PDF Document</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">description</span> 3.1 MB</span>
+</div>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-on-secondary rounded-full hover:shadow-lg transition-all scale-95 active:scale-90">
+<span class="material-symbols-outlined">download</span>
+<span>Download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Informational Visual Break -->
+<section class="py-section-gap-lg">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="rounded-[40px] bg-primary-container p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="absolute inset-0 opacity-10"></div>
+<div class="relative z-10 max-w-xl text-on-primary">
+<h2 class="font-headline-xl text-headline-xl mb-6">Can't find what you're looking for?</h2>
+<p class="font-body-lg text-body-lg mb-8 opacity-90">Our archives contain historical documents, past results, and event photo albums. If you require a specific document not listed here, please visit the physical office.</p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-secondary-container text-on-secondary-container rounded-full font-bold hover:scale-105 transition-transform">Request Document</button>
+<button class="px-8 py-4 border border-on-primary text-on-primary rounded-full font-bold hover:bg-on-primary/10 transition-all">Search Archives</button>
+</div>
+</div>
+<div class="relative z-10 w-full md:w-80 h-80 rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist high-quality photograph of a modern academic office with stacked documents, a computer, and natural window lighting reflecting a premium institutional environment. The color palette is composed of soft blues, whites, and wood textures, matching the collegiate theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD25y6IBwh4d1j32R9VUz2NJHCxu2Jhb6s1wf5sppUQmTlRoavYtuJTutTmNTaRD1jRSYY4x_zXiobN1uftnWmOkkmeh7LQVi_0m9IzysX2kHSPuvWvE8rEYG6Z_YPjZHbpczKqUWhe8Cs-SRBNRn4A2O4KeHOqOtbDaagsOXDytmcJO-VbJh3gTzgG0oxWcVb_GTnMdLenJPb0WtYF63zPOEHU77LFD5P40WcWNTKHH6NR4vPAG3gIOZvz-ez73SchEMadFHSSEsQ"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap-md px-gutter py-section-gap-lg max-w-container-max mx-auto">
+<div class="space-y-6">
+<a class="font-headline-md text-headline-md font-bold text-on-primary block" href="index.html">
+                    RDS Independent PU College
+                </a>
+<p class="font-body-md text-body-md text-on-primary/70">
+                    Excellence in education, character building, and academic success for future leaders.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">mail</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">phone</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-6">Quick Links</h4>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="news.html">News</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="events.html">Events</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="gallery.html">Gallery</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="downloads.html">Downloads</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-6">Legal</h4>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-6">Subscribe</h4>
+<p class="font-body-md text-body-md text-on-primary/70 mb-4">Get the latest updates on admissions and events.</p>
+<div class="flex gap-2">
+<input class="bg-white/10 border border-white/20 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-secondary-fixed focus:outline-none" placeholder="Email Address" type="email"/>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-4 py-2 rounded-lg font-bold transition-all hover:bg-secondary-container">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-on-primary/60 font-body-md text-body-md">
+<div>© 2024 RDS Independent PU College. All rights reserved.</div>
+<div class="flex gap-6">
+<span>Designed for Excellence</span>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll active state tracking for sidebar
+        const observerOptions = {
+            root: null,
+            rootMargin: '-10% 0px -80% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    document.querySelectorAll('aside a[href^="#"]').forEach(link => {
+                        link.classList.remove('bg-primary-fixed', 'text-primary');
+                        link.classList.add('hover:bg-surface-container-high', 'text-on-surface-variant');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('bg-primary-fixed', 'text-primary');
+                            link.classList.remove('hover:bg-surface-container-high', 'text-on-surface-variant');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('div[id]').forEach((section) => {
+            observer.observe(section);
+        });
+
+        // Simple download button interaction
+        document.querySelectorAll('button').forEach(btn => {
+            if(btn.innerText.includes('Download')) {
+                btn.addEventListener('click', () => {
+                    const originalContent = btn.innerHTML;
+                    btn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Downloading...';
+                    setTimeout(() => {
+                        btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Done';
+                        setTimeout(() => {
+                            btn.innerHTML = originalContent;
+                        }, 2000);
+                    }, 1500);
+                });
+            }
+        });
+    </script>
+</body></html>

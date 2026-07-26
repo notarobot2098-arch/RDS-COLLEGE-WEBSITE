@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admissions | RDS Independent PU College</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#001e40",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#799dd6",
+                    "surface-dim": "#d3daef",
+                    "primary-fixed-dim": "#a7c8ff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#291800",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#ffb955",
+                    "on-background": "#141b2b",
+                    "tertiary-fixed": "#ffddb4",
+                    "tertiary": "#2d1a00",
+                    "inverse-surface": "#293040",
+                    "primary-container": "#003366",
+                    "background": "#f9f9ff",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#d48c00",
+                    "tertiary-container": "#492d00",
+                    "secondary-fixed-dim": "#79dd68",
+                    "inverse-primary": "#a7c8ff",
+                    "on-primary-fixed": "#001b3c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e1e8fd",
+                    "surface-container-highest": "#dce2f7",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface": "#f9f9ff",
+                    "outline-variant": "#c3c6d1",
+                    "on-surface": "#141b2b",
+                    "surface-variant": "#dce2f7",
+                    "secondary-container": "#94fa81",
+                    "secondary-fixed": "#94fa81",
+                    "on-tertiary-fixed-variant": "#633f00",
+                    "surface-container-low": "#f1f3ff",
+                    "on-surface-variant": "#43474f",
+                    "surface-tint": "#3a5f94",
+                    "on-secondary-fixed": "#002200",
+                    "on-secondary-container": "#027507",
+                    "on-primary-fixed-variant": "#1f477b",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#005303",
+                    "surface-bright": "#f9f9ff",
+                    "surface-container": "#e9edff",
+                    "inverse-on-surface": "#edf0ff",
+                    "primary-fixed": "#d5e3ff",
+                    "secondary": "#006e05",
+                    "outline": "#737780"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "section-gap-md": "48px",
+                    "section-gap-lg": "80px"
+            },
+            "fontFamily": {
+                    "display-hero-mobile": ["Sora"],
+                    "display-hero": ["Sora"],
+                    "body-lg": ["Inter"],
+                    "headline-xl": ["Sora"],
+                    "headline-md": ["Sora"],
+                    "headline-lg": ["Sora"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-hero": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-line::before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: repeating-linear-gradient(to bottom, #001e40 0, #001e40 4px, transparent 4px, transparent 8px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopNavBar -->
+<header class="bg-surface/70 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b-2 border-primary/10 h-20">
+<nav class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max mx-auto h-full">
+<a class="font-headline-md text-headline-md font-bold text-primary" href="index.html">
+            RDS <span class="hidden md:inline">Independent PU College</span><span class="md:hidden">PUC</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="academics.html">Academics</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="admissions.html">Admissions</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="facilities.html">Facilities</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Life</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm hover:shadow-lg hover:-translate-y-0.5 transition-all active:scale-95">
+                Apply Now
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden py-section-gap-lg">
+<div class="relative w-full px-gutter max-w-container-max mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full font-label-sm mb-6">
+                    Admissions Open 2024-25
+                </span>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-6 leading-tight">
+                    Your Journey to <br/><span class="text-secondary">Excellence</span> Starts Here
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
+                    Empowering the next generation of leaders through rigorous academic standards and holistic development at RDS Independent PU College.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm text-lg shadow-lg hover:bg-primary-container transition-all flex items-center gap-2">
+                        Download Prospectus <span class="material-symbols-outlined">download</span>
+</button>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-full font-label-sm text-lg hover:bg-primary/5 transition-all">
+                        Virtual Tour
+                    </button>
+</div>
+</div>
+<div class="relative hidden lg:block h-[500px]">
+<div class="absolute inset-0 bg-primary/5 rounded-3xl overflow-hidden shadow-2xl rotate-3">
+<img class="w-full h-full object-cover opacity-90" data-alt="A premium, cinematic shot of a modern educational campus architecture featuring sleek glass facades and lush green landscaping. The sun casts warm, golden light across the building, emphasizing clean geometric lines and a sense of institutional prestige and academic calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDCOGR9NTvATezMt2VPo_LTDDg6TLwsWvLzDcboZhENsdcrTVDukwqHgiRJCQEMC5uJON9M19BxSJgKlMFchBk_rparacfmbuvLWLjkP7MNAQrRvzLPinMm3oRQqCodWQ9j2IGnNx3aEVHobRJFGUkki-HNB0wlGdsAH_S8Qw7GlnsJ7rLEHNCdfxcZUJuQHxjB8w4_4vozf_cu3GIxyZIQiKbJ8tHTYZSuoFfrzSunriI0p7u31geUnRAb7QiwdGmBGRXXZGF5gs"/>
+</div>
+<div class="absolute top-10 -left-10 glass-card p-6 rounded-2xl shadow-xl -rotate-3 border-l-4 border-secondary">
+<div class="text-headline-md font-bold text-primary">98%</div>
+<div class="text-label-sm text-on-surface-variant">Annual Pass Rate</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How to Apply (Timeline) -->
+<section class="py-section-gap-lg bg-surface-container-low">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">How to Apply</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">A seamless four-step process to secure your future at RDS.</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8 relative">
+<!-- Progress Line (Desktop) -->
+<div class="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-primary/10 z-0"></div>
+<!-- Steps -->
+<div class="relative z-10 group text-center md:text-left">
+<div class="w-16 h-16 rounded-2xl bg-primary text-on-primary flex items-center justify-center text-headline-md font-bold mb-6 mx-auto md:mx-0 group-hover:scale-110 transition-transform">01</div>
+<h3 class="font-headline-md text-primary mb-3">Online Inquiry</h3>
+<p class="text-on-surface-variant">Fill out the preliminary interest form to receive detailed course information and counseling.</p>
+</div>
+<div class="relative z-10 group text-center md:text-left">
+<div class="w-16 h-16 rounded-2xl bg-primary-container text-on-primary-container flex items-center justify-center text-headline-md font-bold mb-6 mx-auto md:mx-0 group-hover:scale-110 transition-transform">02</div>
+<h3 class="font-headline-md text-primary mb-3">Campus Visit</h3>
+<p class="text-on-surface-variant">Schedule a guided tour of our facilities and meet with our academic heads for personal counseling.</p>
+</div>
+<div class="relative z-10 group text-center md:text-left">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center text-headline-md font-bold mb-6 mx-auto md:mx-0 group-hover:scale-110 transition-transform">03</div>
+<h3 class="font-headline-md text-primary mb-3">Entrance Test</h3>
+<p class="text-on-surface-variant">Participate in the RDS Merit Assessment (RMA) to qualify for scholarships and preferred streams.</p>
+</div>
+<div class="relative z-10 group text-center md:text-left">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center text-headline-md font-bold mb-6 mx-auto md:mx-0 group-hover:scale-110 transition-transform">04</div>
+<h3 class="font-headline-md text-primary mb-3">Enrollment</h3>
+<p class="text-on-surface-variant">Submit required documentation and finalize your admission through our digital portal.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Integrated Coaching -->
+<section class="py-section-gap-lg">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row gap-12 items-center mb-16">
+<div class="lg:w-1/2">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6 leading-tight">Master the Future with <br/>Integrated Coaching</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">We bridge the gap between PU curriculum and competitive exam preparation, providing a streamlined approach for NEET and KCET aspirants.</p>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<div class="bg-primary p-8 rounded-3xl text-on-primary shadow-xl">
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1">medical_services</span>
+<h3 class="font-headline-md mb-2">NEET Focus</h3>
+<p class="text-on-primary/80 font-label-sm">In-depth Biology, Physics, and Chemistry for Medical Excellence.</p>
+</div>
+<div class="bg-secondary p-8 rounded-3xl text-on-secondary shadow-xl mt-8">
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1">engineering</span>
+<h3 class="font-headline-md mb-2">KCET Master</h3>
+<p class="text-on-secondary/80 font-label-sm">Precision Engineering coaching with local rank dominance.</p>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Feature Cards -->
+<div class="glass-card p-8 rounded-2xl border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-4">school</span>
+<h4 class="font-headline-md text-primary mb-2">Expert Faculty</h4>
+<ul class="space-y-3 text-on-surface-variant font-label-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Ph.D holder professors</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Industry experts mentorship</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Personalized doubt clearing</li>
+</ul>
+</div>
+<div class="glass-card p-8 rounded-2xl border-l-4 border-secondary">
+<span class="material-symbols-outlined text-secondary mb-4">analytics</span>
+<h4 class="font-headline-md text-primary mb-2">Testing &amp; Analytics</h4>
+<ul class="space-y-3 text-on-surface-variant font-label-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Weekly mock assessments</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> AI-driven performance tracking</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> All India Rank prediction</li>
+</ul>
+</div>
+<div class="glass-card p-8 rounded-2xl border-l-4 border-tertiary-container">
+<span class="material-symbols-outlined text-tertiary-container mb-4">library_books</span>
+<h4 class="font-headline-md text-primary mb-2">Study Materials</h4>
+<ul class="space-y-3 text-on-surface-variant font-label-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Comprehensive module sets</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Digital library access 24/7</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Previous years paper analysis</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Downloads Section -->
+<section class="py-section-gap-lg bg-primary text-on-primary overflow-hidden relative">
+<div class="absolute inset-0 opacity-10"></div>
+<div class="relative px-gutter max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="md:w-1/2">
+<h2 class="font-headline-xl text-headline-xl mb-6">Explore Our Academic Ecosystem</h2>
+<p class="font-body-lg text-primary-fixed-dim mb-8">Download our 2024-25 comprehensive brochure to learn more about curriculum, faculty, and the RDS lifestyle.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-sm hover:bg-secondary/90 transition-all group" href="downloads.html">
+                        Academic Brochure 2024 <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">download</span>
+</a>
+<a class="inline-flex items-center justify-center gap-3 border border-primary-fixed-dim text-primary-fixed-dim px-8 py-4 rounded-full font-label-sm hover:bg-white/5 transition-all" href="downloads.html">
+                        Fee Structure <span class="material-symbols-outlined">visibility</span>
+</a>
+</div>
+</div>
+<div class="md:w-1/3 relative group">
+<div class="absolute -inset-4 bg-secondary/30 rounded-3xl blur-xl group-hover:bg-secondary/50 transition-all"></div>
+<img class="relative rounded-2xl shadow-2xl border-4 border-white/10 w-full" data-alt="A professionally designed college brochure layout displayed on a high-end tablet screen. The brochure features vibrant photos of students, clean typography, and the RDS Independent PU College branding. The scene is set on a minimalist wooden desk with soft natural light, conveying organized academic excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkT-hOPC6NCvEKRPOw91oprx7xrLSys9wXQNzJimiC8V_ktvuHNJoZFw6bpYXt3jtIUBsB97kUOerIREq4Nt81200rvdx6PjhQkzT49G_aQsGoks1LUkYj4uT1l588zz9cPbkmBv5N5xtKNZTtYv4fM5vCiZdPe0LhjoxbR84GtU43JwlMIrVJRB6i6cJaoNwTWT8d44HqF_ZEk6oDT3A0u8Df0YF-lQnTe1TFABy5T67LxlMGZjt89-jzTNC9b_tfKSSNftspjfE"/>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap-lg bg-surface">
+<div class="px-gutter max-w-container-max mx-auto max-w-4xl">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Common Questions</h2>
+<p class="text-on-surface-variant">Everything you need to know about joining our academic community.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="faq-item border border-outline-variant rounded-xl bg-white overflow-hidden transition-all duration-300">
+<button class="w-full flex items-center justify-between p-6 text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-md text-primary text-lg md:text-xl">What is the eligibility criteria for PCMB/PCMC?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant">
+                        Students must have cleared their 10th standard (SSLC/ICSE/CBSE) board exams with a minimum aggregate of 60%. Specific subject weightage applies for science streams.
+                    </div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item border border-outline-variant rounded-xl bg-white overflow-hidden transition-all duration-300">
+<button class="w-full flex items-center justify-between p-6 text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-md text-primary text-lg md:text-xl">Are scholarships available for meritorious students?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant">
+                        Yes, RDS offers up to 50% scholarship on tuition fees for students scoring above 95% in their 10th board exams or top ranks in our internal RMA test.
+                    </div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item border border-outline-variant rounded-xl bg-white overflow-hidden transition-all duration-300">
+<button class="w-full flex items-center justify-between p-6 text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-md text-primary text-lg md:text-xl">Does the college provide transport facilities?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant">
+                        We operate a fleet of modern, GPS-tracked buses covering most major routes in the city. Detailed route maps are available in the transport section of our prospectus.
+                    </div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item border border-outline-variant rounded-xl bg-white overflow-hidden transition-all duration-300">
+<button class="w-full flex items-center justify-between p-6 text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-md text-primary text-lg md:text-xl">How integrated is the NEET/KCET coaching?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant">
+                        Our coaching is woven into the daily schedule. PU classes are held in the mornings, followed by competitive exam modules, ensuring students don't need external tuition.
+                    </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full py-section-gap-md px-gutter mt-section-gap-lg">
+<div class="max-w-container-max mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<a class="font-headline-md text-headline-md font-bold text-on-primary mb-6 block" href="index.html">RDS Independent PU College</a>
+<p class="text-on-primary/70 max-w-sm mb-6">Leading the way in independent pre-university education through innovation, integrity, and inspiration.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all" href="#"><span class="material-symbols-outlined text-sm">language</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+<div>
+<h5 class="font-label-sm font-bold mb-6 text-tertiary-fixed">Resources</h5>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="news.html">Latest News</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="downloads.html">Downloads</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="facilities.html">Campus Map</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-sm font-bold mb-6 text-tertiary-fixed">Quick Links</h5>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="contact.html">Contact Us</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="gallery.html">Gallery</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="faculty.html">Faculty</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-on-primary/60 font-body-md text-body-md">© 2024 RDS Independent PU College. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="flex items-center gap-2 text-on-primary/60"><span class="material-symbols-outlined text-sm">call</span> +91 80 1234 5678</span>
+<span class="flex items-center gap-2 text-on-primary/60"><span class="material-symbols-outlined text-sm">location_on</span> Bangalore, India</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    function toggleFaq(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.material-symbols-outlined');
+        const isOpen = !content.classList.contains('hidden');
+        
+        // Close all other FAQs
+        document.querySelectorAll('.faq-content').forEach(item => {
+            item.classList.add('hidden');
+            item.previousElementSibling.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+        });
+
+        if (!isOpen) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    }
+
+    // Lightweight hover effect for steps
+    document.querySelectorAll('.group').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            el.style.transform = 'translateY(-5px)';
+            el.style.transition = 'transform 0.3s ease';
+        });
+        el.addEventListener('mouseleave', () => {
+            el.style.transform = 'translateY(0)';
+        });
+    });
+</script>
+</body></html>
