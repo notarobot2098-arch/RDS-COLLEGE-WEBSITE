@@ -3,35 +3,25 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>News &amp; Events | RDS Independent PU College</title>
+<title>Contact Us | RDS Independent PU College</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Sora:wght@100..900&amp;display=swap" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glass-panel {
-            backdrop-filter: blur(16px);
-            background: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        .glass-card {
+            background: rgba(255, 255, 255, 0.70);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.20);
         }
         .cinematic-gradient {
-            background: linear-gradient(135deg, #003366 0%, #001e40 50%, #002244 100%);
+            background: linear-gradient(135deg, #003366 0%, #001e40 100%);
         }
         .text-glow {
-            text-shadow: 0 0 20px rgba(252, 212, 0, 0.3);
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #003366;
-            border-radius: 10px;
+            text-shadow: 0 0 20px rgba(167, 200, 255, 0.3);
         }
     </style>
 <script id="tailwind-config">
@@ -118,274 +108,247 @@
                         "display-lg": ["Sora"]
                     },
                     "fontSize": {
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-md": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
                     }
                 },
             },
         }
     </script>
 </head>
-<body class="bg-surface-base text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<div class="fixed left-0 top-1/2 -translate-y-1/2 z-50 hidden lg:block">
+<button class="bg-primary text-on-primary py-4 px-2 rounded-r-xl shadow-2xl font-bold [writing-mode:vertical-lr] rotate-180 hover:bg-primary-container transition-all active:scale-95 flex items-center gap-2"><span class="material-symbols-outlined rotate-90">edit_note</span>QUICK ENQUIRY</button>
+</div>
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-glass-fill backdrop-blur-md border-b border-glass-border shadow-sm">
-<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">
-                RDS <span class="text-secondary">Independent</span>
+<nav class="fixed top-0 w-full z-50 bg-glass-fill backdrop-blur-md shadow-sm border-b border-glass-border">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">school</span>
+                RDS IPUC
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="academics.html">Academics</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="admissions.html">Admissions</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="facilities.html">Facilities</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="faculty.html">Faculty</a>
+<a class="text-primary font-bold border-b-2 border-secondary-container pb-1" href="contact.html">Contact</a>
 </div>
-<div class="hidden lg:flex items-center gap-8">
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Home</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">About</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Academics</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Admissions</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Facilities</a>
-<a class="text-primary font-bold border-b-2 border-secondary-container pb-1" href="#">News</a>
+<div class="flex gap-4 items-center">
+<button class="hidden lg:block text-primary font-semibold hover:text-secondary-container transition-colors">Vidwat Coaching</button>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold hover:shadow-lg active:scale-95 transition-all text-center" href="admissions.html">Apply Now</a>
 </div>
-<div class="flex items-center gap-4">
-<button class="hidden md:block px-6 py-2 border border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-on-primary transition-all active:scale-95">Vidwat Coaching</button>
-<button class="bg-secondary-container text-on-secondary-container px-6 py-2 font-bold rounded-lg shadow-md hover:bg-secondary transition-all active:scale-95">Apply Now</button>
 </div>
 </nav>
-</header>
-<main class="pt-20">
+<main class="pt-24">
 <!-- Hero Section -->
-<section class="relative h-[614px] md:h-[716px] flex items-center overflow-hidden cinematic-gradient">
-<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
-<div class="max-w-2xl">
-<span class="inline-block px-4 py-1 rounded-full bg-secondary-container/20 text-secondary-container font-label-lg mb-6 border border-secondary-container/30 uppercase">Academic Excellence</span>
-<h1 class="font-display-lg text-display-lg text-on-primary mb-6 leading-tight">Campus Buzz &amp; <br/><span class="text-secondary-container text-glow">Achievements</span></h1>
-<p class="font-body-lg text-body-lg text-primary-fixed max-w-lg">Discover the latest milestones, celebrations, and academic triumphs defining the 2026-27 session at RDS Independent PU College.</p>
-</div>
-</div>
-<!-- Decorative Element -->
-<div class="absolute bottom-0 right-0 w-1/3 h-full hidden lg:block">
-<div class="w-full h-full bg-no-repeat bg-right-bottom opacity-20" data-alt="A sophisticated architectural silhouette of a modern university building, rendered in a translucent glass-like style with glowing navy blue and gold outlines against a deep midnight background. The aesthetic is clean, academic, and high-end, representing institutional prestige." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiGZX3xknKJiBHsoTufo52ykeq4l1kyLZE0dD-dR7SenO5nRqbyKXbiKYT0s-8lpYerAT_LqPkxTelLaTqICjb7ex6xpmI0JQxT4SpOwcUHZNT3J314g77iXkCoyyLH81UztrepTsciNEFRcWajsDKX3rTfOwL4qWtnIz44pQWbndx-VSYt_w9OXBqUfUZxSC1Ms6QwTBB2JN0KzWmRiseKPU2qT7RWZ7LLa-v-0xKxrzGeDGMSVm7')"></div>
+<section class="relative h-[400px] flex items-center justify-center overflow-hidden cinematic-gradient px-margin-mobile">
+<div class="relative z-10 text-center max-w-3xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-label-lg mb-6 tracking-widest uppercase">Academic Session 2026-27</span>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-4 text-glow">Connect With Us</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim opacity-90">Start your journey toward academic excellence. Our dedicated team is here to guide you through every step of your pre-university education.</p>
 </div>
 </section>
-<!-- Featured News Slider -->
-<section class="py-24 px-margin-desktop max-w-container-max mx-auto overflow-hidden">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Highlights of the Month</h2>
-<p class="text-on-surface-variant font-body-md">Celebrating our stars and traditions.</p>
-</div>
-<div class="flex gap-4">
-<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="flex gap-gutter overflow-x-auto pb-8 custom-scrollbar snap-x">
-<!-- Featured 1: KCET Ranks -->
-<div class="min-w-[320px] md:min-w-[450px] snap-start group cursor-pointer transition-all duration-700 opacity-0 translate-y-8">
-<div class="relative rounded-xl overflow-hidden mb-6 h-64 md:h-80 glass-panel shadow-lg">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A high-quality group portrait of top-ranking academic students in professional university blazers, holding gold certificates and medals. The lighting is warm and celebratory, set against a blurred background of a modern science laboratory. The mood is one of pride, success, and high-level academic achievement." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCli6k0f5p3W1NBJwpBF-v3MNKncIS2xnWNRDN12sXCnrTvZ7TMIdjZc5wuKR0RahC4iua5sd-gdpcf7hjUqe2mXu9TWDathbrXo_HTjoQ4S4vDc4rNRmFb_6cukhJRFFzPi3YwprsgJvB1O7HoSm3imga_yb6UWxsO-GIFu9T8F3mKNx-algWxe4QK5j3gqrmoy5oKoGGF2xZ0Qj3s93hOxMbUiCDXuNl31qUuESKWwd7u_23Uk1T0')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-6 left-6 right-6">
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded font-label-md uppercase mb-3 inline-block">Academic Record</span>
-<h3 class="font-headline-md text-headline-md text-on-primary group-hover:text-secondary-container transition-colors">Dominating KCET 2026: 12 Students in Top 100</h3>
-</div>
-</div>
-</div>
-<!-- Featured 2: Tarang Fest -->
-<div class="min-w-[320px] md:min-w-[450px] snap-start group cursor-pointer transition-all duration-700 opacity-0 translate-y-8">
-<div class="relative rounded-xl overflow-hidden mb-6 h-64 md:h-80 glass-panel shadow-lg">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant, cinematic shot of a cultural festival stage at night. Performers in traditional Indian dance attire are captured in a dynamic pose under gold and deep blue spotlights. Confetti and soft atmospheric haze fill the air, creating a magical, festive, and premium event atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3CMRdJ6fY-3nl1wu_idnK4ow5OV73p0oUh0jFoREM50pQ9AVyJGQdrnYoAdLawiNnDusV3uU4vS7Jwzz7aPOcltBvmmc8amaqEmXjho4hwG0HZk-poW0BTyiANgecC3ahzO-gwCyHF6MJkb37R2O_79kYCBEtmMNldlMePuOExFU0OOXhfZpM_2FessFH0TvlovZ8_I8_6u85tXyMm3egfRc0GCbxPEBnPES4PhHLklsZac3Jmw-B')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-6 left-6 right-6">
-<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded font-label-md uppercase mb-3 inline-block">Cultural Pulse</span>
-<h3 class="font-headline-md text-headline-md text-on-primary group-hover:text-secondary-container transition-colors">Tarang 2026: A Symphony of Art &amp; Tradition</h3>
-</div>
-</div>
-</div>
-<!-- Featured 3: NEET Success -->
-<div class="min-w-[320px] md:min-w-[450px] snap-start group cursor-pointer transition-all duration-700 opacity-0 translate-y-8">
-<div class="relative rounded-xl overflow-hidden mb-6 h-64 md:h-80 glass-panel shadow-lg">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A modern medical library with students in white coats studying intensively. Golden sunlight streams through large windows, illuminating dust motes and bookshelves. The setting conveys a sense of high-stakes medical preparation and intellectual rigor in a premium university environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpwZAISbAdxqlRZ5vI6NQ8l9pQuZOsPEqlKcJBESzLqNYAlirxAwzW_K2BV2H_dJM83zMdXF7uHXuOLRwYrioXlLAc5HpslstVZM11iYCmmU9Km8LLiYTP6VKM8EjeWKE5ZrwbPs2qRfCIb6FEusjJ93LVM5gq39cPuRGCBPujKGHVFY-mRe8WkbLvZJIsZ1c8Fekxg6TSpskmOqSl62wii_y1qiVuzxBCiyKp7UdgEaWX3F0gl5lJ')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-6 left-6 right-6">
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded font-label-md uppercase mb-3 inline-block">NEET Highlights</span>
-<h3 class="font-headline-md text-headline-md text-on-primary group-hover:text-secondary-container transition-colors">Paving the Way for Future Doctors: NEET 2026 Results</h3>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Bento Event Calendar & Social Integration -->
-<section class="py-24 bg-surface-container-low">
-<div class="px-margin-desktop max-w-container-max mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-<!-- Event Calendar (Bento Left) -->
-<div class="lg:col-span-8 flex flex-col gap-8">
-<div class="flex justify-between items-center">
-<h2 class="font-headline-lg text-headline-lg text-primary">Event Calendar</h2>
-<button class="text-primary font-bold flex items-center gap-2 group">
-                                View Full Calendar <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
-</button>
-</div>
-<!-- Calendar Grid List -->
+<!-- Main Content Grid -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-20 -mt-20 relative z-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Form -->
+<div class="lg:col-span-7 glass-card rounded-xl p-8 md:p-12 shadow-xl transition-all duration-500 opacity-90 hover:shadow-2xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Professional Enquiry</h2>
+<p class="text-on-surface-variant mb-10">Submit your details and our admission counselors will reach out to you within 24 hours.</p>
+<form class="space-y-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Event 1 -->
-<div class="glass-panel p-6 rounded-xl hover:shadow-xl transition-all border-l-4 border-l-secondary-container group duration-500 opacity-0 translate-y-4">
+<div class="space-y-2">
+<label class="font-label-lg text-on-surface-variant ml-1">Student Name</label>
+<input class="w-full bg-white border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Enter full name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-on-surface-variant ml-1">Parent/Guardian Name</label>
+<input class="w-full bg-white border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Enter parent name" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-lg text-on-surface-variant ml-1">Phone Number</label>
+<input class="w-full bg-white border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="+91 XXXXX XXXXX" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-white border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="name@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-on-surface-variant ml-1">Interested Stream</label>
+<select class="w-full bg-white border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+<option>PCMB (Science)</option>
+<option>PCMC (Science)</option>
+<option>CEBA (Commerce)</option>
+<option>HEPS (Arts)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-on-surface-variant ml-1">Your Message</label>
+<textarea class="w-full bg-white border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all shadow-md active:scale-[0.98]" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+<!-- Right Column: Info & Details -->
+<div class="lg:col-span-5 space-y-gutter">
+<!-- Contact Cards -->
+<div class="glass-card rounded-xl p-8 shadow-lg border-l-4 border-secondary-container transition-all duration-500 hover:scale-[1.02]">
+<h3 class="font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">domain</span>
+                            Campus Location
+                        </h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            RDS Independent PU College Campus,<br/>
+                            Khanapur Road, Tilakwadi,<br/>
+                            Belagavi, Karnataka - 590006
+                        </p>
+<div class="space-y-6">
 <div class="flex items-start gap-4">
-<div class="bg-primary text-on-primary rounded-lg p-3 text-center min-w-[70px]">
-<p class="font-headline-md text-headline-md leading-none">15</p>
-<p class="font-label-md uppercase">Oct</p>
+<div class="bg-primary/5 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary">call</span>
 </div>
 <div>
-<h4 class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-secondary transition-colors">National Level Science Seminar</h4>
-<p class="text-on-surface-variant text-sm flex items-center gap-1 mb-4">
-<span class="material-symbols-outlined text-sm">schedule</span> 10:00 AM - 4:00 PM
-                                        </p>
-<span class="text-xs bg-surface-variant text-on-surface-variant px-2 py-1 rounded uppercase font-bold tracking-wider">Academic</span>
+<p class="font-label-lg text-primary">Office Reception</p>
+<p class="text-on-surface-variant font-semibold text-lg">+91 0831 2400001</p>
 </div>
 </div>
-</div>
-<!-- Event 2 -->
-<div class="glass-panel p-6 rounded-xl hover:shadow-xl transition-all border-l-4 border-l-primary-container group duration-500 opacity-0 translate-y-4">
 <div class="flex items-start gap-4">
-<div class="bg-primary text-on-primary rounded-lg p-3 text-center min-w-[70px]">
-<p class="font-headline-md text-headline-md leading-none">22</p>
-<p class="font-label-md uppercase">Oct</p>
+<div class="bg-primary/5 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary">mail</span>
 </div>
 <div>
-<h4 class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-secondary transition-colors">Annual Inter-College Sports Meet</h4>
-<p class="text-on-surface-variant text-sm flex items-center gap-1 mb-4">
-<span class="material-symbols-outlined text-sm">location_on</span> RDS Main Ground
-                                        </p>
-<span class="text-xs bg-surface-variant text-on-surface-variant px-2 py-1 rounded uppercase font-bold tracking-wider">Athletics</span>
+<p class="font-label-lg text-primary">General Inquiries</p>
+<p class="text-on-surface-variant font-semibold">admissions@rdscollege.edu.in</p>
 </div>
 </div>
 </div>
-<!-- Event 3 -->
-<div class="glass-panel p-6 rounded-xl hover:shadow-xl transition-all border-l-4 border-l-error group duration-500 opacity-0 translate-y-4">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-on-primary rounded-lg p-3 text-center min-w-[70px]">
-<p class="font-headline-md text-headline-md leading-none">30</p>
-<p class="font-label-md uppercase">Oct</p>
 </div>
+<!-- Department Directory -->
+<div class="bg-surface-container-high border border-outline-variant rounded-xl p-8 shadow-xl">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Direct Office Contacts</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-outline-variant">
 <div>
-<h4 class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-secondary transition-colors">Mid-Term Academic Deadline</h4>
-<p class="text-on-surface-variant text-sm flex items-center gap-1 mb-4">
-<span class="material-symbols-outlined text-sm">warning</span> Submission at Dean's Office
-                                        </p>
-<span class="text-xs bg-error-container text-on-error-container px-2 py-1 rounded uppercase font-bold tracking-wider">Deadlines</span>
+<p class="font-semibold text-on-surface">Admissions Office</p>
+<p class="text-sm text-on-surface-variant">Ext. 102</p>
 </div>
+<a class="bg-primary/10 p-2 rounded-full hover:bg-primary/20 transition-all text-primary" href="tel:+918312400102">
+<span class="material-symbols-outlined text-sm">phone_forwarded</span>
+</a>
 </div>
-</div>
-<!-- Event 4 -->
-<div class="glass-panel p-6 rounded-xl hover:shadow-xl transition-all border-l-4 border-l-secondary-container group duration-500 opacity-0 translate-y-4">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-on-primary rounded-lg p-3 text-center min-w-[70px]">
-<p class="font-headline-md text-headline-md leading-none">05</p>
-<p class="font-label-md uppercase">Nov</p>
-</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant">
 <div>
-<h4 class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-secondary transition-colors">Career Guidance: Vidwat Academy</h4>
-<p class="text-on-surface-variant text-sm flex items-center gap-1 mb-4">
-<span class="material-symbols-outlined text-sm">school</span> Main Auditorium
-                                        </p>
-<span class="text-xs bg-surface-variant text-on-surface-variant px-2 py-1 rounded uppercase font-bold tracking-wider">Coaching</span>
+<p class="font-semibold text-on-surface">Accounts &amp; Fee Dept</p>
+<p class="text-sm text-on-surface-variant">Ext. 105</p>
 </div>
+<a class="bg-primary/10 p-2 rounded-full hover:bg-primary/20 transition-all text-primary" href="tel:+918312400105">
+<span class="material-symbols-outlined text-sm">phone_forwarded</span>
+</a>
 </div>
-</div>
-</div>
-</div>
-<!-- Social Wall (Bento Right) -->
-<div class="lg:col-span-4 bg-primary text-on-primary rounded-3xl p-8 shadow-2xl relative overflow-hidden flex flex-col hover:scale-[1.02] transition-transform duration-300 backdrop-blur-lg border border-white/10">
-<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container opacity-10 rounded-full -mr-16 -mt-16"></div>
-<div class="flex items-center gap-3 mb-8">
-<span class="material-symbols-outlined text-secondary-container text-3xl">share</span>
-<h2 class="font-headline-md text-headline-md">Social Connect</h2>
-</div>
-<div class="flex-grow space-y-6">
-<!-- Tweet Mockup -->
-<div class="bg-white/10 p-4 rounded-xl border border-white/5 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-default">
-<div class="flex items-center gap-3 mb-3">
-<div class="w-8 h-8 rounded-full bg-secondary-container"></div>
+<div class="flex justify-between items-center py-3">
 <div>
-<p class="text-xs font-bold">@rds_college</p>
-<p class="text-[10px] opacity-60">2 hours ago</p>
+<p class="font-semibold text-on-surface">Principal's Office</p>
+<p class="text-sm text-on-surface-variant">Appointments Only</p>
+</div>
+<a class="bg-primary/10 p-2 rounded-full hover:bg-primary/20 transition-all text-primary" href="mailto:principal@rdscollege.edu.in">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
 </div>
 </div>
-<p class="text-sm">Congratulations to our basket-ball team for winning the State Finals! #RDSChampions #PUCollege</p>
-</div>
-<!-- Instagram Mockup -->
-<div class="relative group cursor-pointer overflow-hidden rounded-xl h-48">
-<div class="absolute inset-0 bg-cover bg-center" data-alt="A lively Instagram-style flat lay of university merchandise including a navy RDS hoodie, a gold-embossed notebook, and a coffee mug with the college crest. Soft morning light creates a trendy, relatable social media vibe." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkJrCk6_EHvqxGL0hZgdDoAWgZuyLL3Rb8YsHdpFfD_jFCVX2jySQxpnOaSkOOY6GQPIiHOsUW-oNfmGVt0rbocuGkgBJ0x-AGOmuw9xJRvRVZaHdU7ToJ6WHs69LbI8HQVmxzTB2q0-mxG_thcbdY91lkpUlnIirwkH6tNw0VZxKTx0FMXfLNDfsUqImNfBYf6nXD8sk7YMeUa6XlJZMOy7270sJj5XCDSivTZTLU2bZiDNpWqvZ2')"></div>
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
-</div>
-</div>
-</div>
-<button class="w-full mt-8 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition-all font-bold">Follow @rds_pu_college</button>
 </div>
 </div>
 </div>
 </section>
-<!-- Newsletter Subscription -->
-<section class="py-24">
-<div class="px-margin-desktop max-w-container-max mx-auto">
-<div class="relative rounded-3xl overflow-hidden glass-panel p-12 md:p-20 shadow-2xl border border-white/40">
-<!-- Background Accent -->
-<div class="absolute -top-24 -left-24 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl"></div>
-<div class="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-<div class="relative z-10 flex flex-col lg:flex-row items-center gap-12">
-<div class="lg:w-1/2">
-<h2 class="font-display-lg-mobile md:font-display-lg text-primary mb-6">Stay Informed with <br/><span class="italic text-secondary">Campus Chronicles</span></h2>
-<p class="font-body-lg text-on-surface-variant">Get a monthly digest of achievements, event invitations, and academic updates delivered directly to your inbox.</p>
-</div>
-<div class="lg:w-1/2 w-full">
-<form class="flex flex-col md:flex-row gap-4 p-2 bg-white rounded-2xl shadow-inner border border-outline-variant">
-<input class="flex-grow px-6 py-4 bg-transparent border-none focus:ring-0 text-primary font-medium" placeholder="Your academic email" required="" type="email"/>
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold hover:bg-gradient-start transition-all active:scale-95 shadow-lg" type="submit">Subscribe Now</button>
-</form>
-<p class="text-xs text-on-surface-variant mt-4 opacity-60">* We respect your privacy. Unsubscribe at any time.</p>
+<!-- Map Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop pb-20">
+<div class="glass-card rounded-2xl overflow-hidden shadow-2xl relative h-[500px] border-2 border-primary/10">
+<div class="absolute inset-0 bg-surface-dim/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqBBTcvFsllNktDIdFX7k0xQmXopeDutnXARcJenElI9otIaGrM97p8dbhf3XzDxtRiCMrgCf6xqUS3CkcWrGwk38ZEIOntHO-aFFzpDudFKkqxcIoJsgBi_0LCi2mAYiB-vnl3nRW59JAIS8vsXF5kjCOR9CcxCKM7ok3A-m0iuRCAt_RZrwAeb1gq2oRRGsa5I86LvebQHDlPdJF-FTo3z71q_OiORdaOWlEGF9f7L4bI6sbf4Kh')"></div>
+<!-- Mock Map UI -->
+<div class="absolute top-6 left-6 z-10 glass-card p-6 rounded-xl max-w-sm border-l-4 border-primary">
+<h4 class="font-headline-md text-primary mb-2">Visit Our Campus</h4>
+<p class="text-on-surface-variant text-sm mb-4">We are located in the heart of Belagavi, easily accessible from the central bus terminal and railway station.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="https://maps.google.com" target="_blank">
+                        Get Directions
+                        <span class="material-symbols-outlined">directions</span>
+</a>
 </div>
 </div>
+</section>
+<!-- FAQ Quick Links -->
+<section class="bg-surface-container-low py-20 px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-primary">Need Instant Answers?</h2>
+<p class="text-on-surface-variant">Explore our frequently asked questions about admissions and campus life.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<a class="group glass-card p-8 rounded-xl hover:bg-primary transition-all duration-300" href="admissions.html">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-secondary-container mb-4">description</span>
+<h4 class="font-headline-md text-primary group-hover:text-on-primary mb-2">Admission Process</h4>
+<p class="text-on-surface-variant group-hover:text-primary-fixed-dim text-sm">Detailed steps for enrolling for the 2026-27 academic year.</p>
+</a>
+<a class="group glass-card p-8 rounded-xl hover:bg-primary transition-all duration-300" href="academics.html">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-secondary-container mb-4">payments</span>
+<h4 class="font-headline-md text-primary group-hover:text-on-primary mb-2">Fee Structure</h4>
+<p class="text-on-surface-variant group-hover:text-primary-fixed-dim text-sm">Transparency in tuition, lab fees, and Vidwat coaching packages.</p>
+</a>
+<a class="group glass-card p-8 rounded-xl hover:bg-primary transition-all duration-300" href="academics.html">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-secondary-container mb-4">stars</span>
+<h4 class="font-headline-md text-primary group-hover:text-on-primary mb-2">Scholarships</h4>
+<p class="text-on-surface-variant group-hover:text-primary-fixed-dim text-sm">Merit-based financial aid for high-achieving SSLC/10th students.</p>
+</a>
 </div>
 </div>
 </section>
 </main>
+<!-- WhatsApp FAB -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center gap-3 hover:scale-110 active:scale-90 transition-all group overflow-hidden" href="https://wa.me/918312400000" target="_blank">
+<span class="font-bold max-w-0 group-hover:max-w-[200px] transition-all duration-500 whitespace-nowrap overflow-hidden">WhatsApp Admission Support</span>
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.006.332.013c.105.007.25.013.391.357.144.354.491 1.198.534 1.285.043.087.072.188.014.303-.058.116-.087.188-.173.289-.087.101-.182.226-.26.303-.094.094-.192.197-.083.383.109.186.484.798 1.038 1.291.714.634 1.314.832 1.502.925.188.094.296.078.405-.045.109-.123.462-.534.585-.715.123-.181.246-.152.412-.091.166.062 1.054.497 1.235.587.181.089.303.134.347.209.044.075.044.436-.101.841z"></path>
+</svg>
+</a>
 <!-- Footer -->
 <footer class="bg-primary dark:bg-gradient-end w-full mt-auto">
-<div class="flex flex-col md:flex-row justify-between items-start gap-gutter px-margin-desktop py-20 max-w-container-max mx-auto">
-<div class="md:w-1/3">
-<div class="font-headline-lg text-headline-lg font-bold text-secondary-fixed mb-6">RDS <br/>PU College</div>
-<p class="text-primary-fixed-dim font-body-md mb-8 max-w-xs leading-relaxed">Nurturing excellence since 2000. Shaping the future leaders of tomorrow through holistic education and elite coaching.</p>
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter px-margin-desktop py-20 max-w-container-max mx-auto text-on-primary">
+<div class="max-w-md">
+<a class="font-headline-lg text-headline-lg font-bold text-secondary-fixed mb-6 block" href="index.html">RDS IPUC</a>
+<p class="text-primary-fixed-dim font-body-md mb-8">Nurturing excellence through value-based education since 2000. In strategic partnership with Vidwat Academy for competitive excellence in NEET, JEE, and KCET.</p>
 <div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container transition-colors group" href="#">
-<span class="material-symbols-outlined text-white group-hover:text-primary">language</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container transition-colors group" href="#">
-<span class="material-symbols-outlined text-white group-hover:text-primary">school</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container transition-colors group" href="#">
-<span class="material-symbols-outlined text-white group-hover:text-primary">mail</span>
-</a>
+<a class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+<a class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
 </div>
 </div>
-<div class="grid grid-cols-2 gap-12 md:w-1/2">
+<div class="grid grid-cols-2 gap-16">
 <div>
-<h5 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Navigation</h5>
+<h5 class="font-label-lg text-secondary-fixed uppercase mb-6 tracking-widest">Navigation</h5>
 <ul class="space-y-4">
-<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="#">Gallery</a></li>
-<li><a class="text-secondary-fixed font-bold" href="#">News</a></li>
-<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="#">Contact</a></li>
-<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="#">Vidwat Coaching</a></li>
+<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="index.html">Home</a></li>
+<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="about.html">About</a></li>
+<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="academics.html">Academics</a></li>
+<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="admissions.html">Admissions</a></li>
+<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="facilities.html">Facilities</a></li>
+<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="faculty.html">Faculty</a></li>
+<li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200 text-secondary-fixed font-bold" href="contact.html">Contact</a></li>
 </ul>
 </div>
 <div>
-<h5 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Legal</h5>
+<h5 class="font-label-lg text-secondary-fixed uppercase mb-6 tracking-widest">Legal</h5>
 <ul class="space-y-4">
 <li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="#">Privacy Policy</a></li>
 <li><a class="text-primary-fixed-dim hover:text-secondary-container transition-colors duration-200" href="#">Terms of Service</a></li>
@@ -393,37 +356,41 @@
 </div>
 </div>
 </div>
-<div class="border-t border-white/10 px-margin-desktop py-8 max-w-container-max mx-auto text-center md:text-left">
+<div class="border-t border-white/5 py-8 text-center px-margin-desktop">
 <p class="text-primary-fixed-dim text-sm opacity-60">© 2026-27 RDS Independent PU College. All Rights Reserved. In Partnership with Vidwat Academy.</p>
 </div>
 </footer>
 <script>
-        // Smooth scroll interaction for slider (Simple demo)
-        const slider = document.querySelector('.custom-scrollbar');
-        const nextBtn = document.querySelectorAll('button')[1]; // Forward button
-        const prevBtn = document.querySelectorAll('button')[0]; // Back button
+        // Simple scroll effect for Navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-3', 'shadow-md');
+                nav.classList.remove('py-4', 'shadow-sm');
+            } else {
+                nav.classList.add('py-4', 'shadow-sm');
+                nav.classList.remove('py-3', 'shadow-md');
+            }
+        });
 
-        if (nextBtn && slider) {
-            nextBtn.addEventListener('click', () => {
-                slider.scrollBy({ left: 300, behavior: 'smooth' });
-            });
-        }
-        if (prevBtn && slider) {
-            prevBtn.addEventListener('click', () => {
-                slider.scrollBy({ left: -300, behavior: 'smooth' });
-            });
-        }
-
-        // Newsletter form interaction
-        const form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const btn = form.querySelector('button');
-                btn.textContent = 'Subscribed!';
-                btn.classList.replace('bg-primary', 'bg-secondary');
-                form.reset();
-            });
-        }
+        // Form submission micro-interaction
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Sending...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = 'Message Sent Successfully!';
+                btn.classList.replace('bg-primary', 'bg-green-600');
+                e.target.reset();
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.replace('bg-green-600', 'bg-primary');
+                    btn.disabled = false;
+                }, 3000);
+            }, 2000);
+        });
     </script>
-<div class="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2"><button class="bg-primary text-on-primary py-4 px-2 rounded-l-xl shadow-2xl flex flex-col items-center gap-2 hover:bg-secondary transition-all group"><span class="material-symbols-outlined">contact_support</span><span class="[writing-mode:vertical-lr] font-bold tracking-widest uppercase text-xs">Quick Enquiry</span></button></div></body></html>
+</body></html>
