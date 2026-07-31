@@ -154,7 +154,15 @@
             to { opacity: 1; transform: translateX(0); }
         }
     </style>
-</head>
+<style>
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 20s linear infinite;
+        }
+    </style></head>
 <body class="bg-surface-base text-on-background font-body-md overflow-x-hidden">
 <!-- Persistent Quick Enquiry Tab -->
 <div class="fixed right-0 top-1/2 z-[60] group pointer-events-none">
@@ -290,9 +298,9 @@
 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-0 reveal-hidden">
 <div class="md:w-1/2 md:pr-12 md:text-right">
 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-l-4 border-tertiary">
-<span class="font-headline-md text-headline-md text-primary-container" data-count="2024">2024</span>
+<span class="font-headline-md text-headline-md text-primary-container" data-count="2026">2026</span>
 <h3 class="font-headline-md text-headline-md mb-2">26+ Years of Excellence</h3>
-<p class="text-on-surface-variant">Consistently ranking among the top institutions with a <span class="font-bold text-primary" data-count="98">98</span>% pass rate and alumni in global leadership roles.</p>
+<p class="text-on-surface-variant">Consistently ranking among the top institutions with over <span class="font-bold text-primary" data-count="52000">52000</span> students nurtured and alumni in global leadership roles.</p>
 </div>
 </div>
 <div class="z-10 w-10 h-10 rounded-full bg-tertiary-container border-4 border-surface-base flex items-center justify-center">
@@ -435,7 +443,7 @@
 </div>
 </div>
 <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-on-primary/60">© 2024 RDS Independent PU College. All rights reserved.</p>
+<p class="text-on-primary/60">© 2026 RDS Independent PU College. All rights reserved.</p>
 <p class="text-on-primary/60 font-label-md">Accredited by PU Board Excellence Committee</p>
 </div>
 </div>
@@ -463,12 +471,12 @@
                         const elapsed = currentTime - startTime;
                         const progress = Math.min(elapsed / duration, 1);
                         const current = Math.floor(progress * target);
-                        counter.textContent = current + (counter.textContent.includes('%') ? '%' : '');
+                        counter.textContent = current.toLocaleString() + (counter.textContent.includes('%') ? '%' : '');
                         
                         if (progress < 1) {
                             requestAnimationFrame(updateCount);
                         } else {
-                            counter.textContent = target + (counter.textContent.includes('%') ? '%' : '');
+                            counter.textContent = target.toLocaleString() + (counter.textContent.includes('%') ? '%' : '');
                         }
                     };
                     requestAnimationFrame(updateCount);

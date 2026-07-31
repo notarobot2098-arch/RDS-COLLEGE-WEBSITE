@@ -3,9 +3,10 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Facilities | RDS Independent PU College</title>
+<title>About Us | RDS Independent PU College</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
@@ -14,464 +15,365 @@
         .glass-card {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
         }
     </style>
-<!-- Tailwind Config -->
 <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-surface-variant": "#43474f",
-                        "on-primary-fixed-variant": "#1f477b",
-                        "on-tertiary": "#ffffff",
-                        "surface-variant": "#dce2f7",
-                        "on-error-container": "#93000a",
-                        "inverse-on-surface": "#edf0ff",
-                        "surface-bright": "#f9f9ff",
-                        "on-tertiary-container": "#d48c00",
-                        "on-background": "#141b2b",
-                        "secondary-container": "#94fa81",
-                        "primary-container": "#003366",
-                        "inverse-surface": "#293040",
-                        "tertiary-fixed": "#ffddb4",
-                        "error-container": "#ffdad6",
-                        "on-tertiary-fixed-variant": "#633f00",
-                        "on-secondary-fixed-variant": "#005303",
-                        "surface": "#f9f9ff",
-                        "error": "#ba1a1a",
-                        "on-secondary-container": "#027507",
-                        "on-primary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary": "#006e05",
-                        "surface-container-low": "#f1f3ff",
-                        "surface-container-highest": "#dce2f7",
-                        "on-secondary-fixed": "#002200",
-                        "on-primary-fixed": "#001b3c",
-                        "tertiary-container": "#492d00",
-                        "on-secondary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "secondary-fixed": "#94fa81",
-                        "surface-tint": "#3a5f94",
-                        "primary-fixed": "#d5e3ff",
-                        "on-surface": "#141b2b",
-                        "primary-fixed-dim": "#a7c8ff",
-                        "on-tertiary-fixed": "#291800",
-                        "primary": "#001e40",
-                        "tertiary-fixed-dim": "#ffb955",
-                        "surface-container-high": "#e1e8fd",
-                        "inverse-primary": "#a7c8ff",
-                        "secondary-fixed-dim": "#79dd68",
-                        "surface-container": "#e9edff",
-                        "outline": "#737780",
-                        "background": "#f9f9ff",
-                        "surface-dim": "#d3daef",
-                        "outline-variant": "#c3c6d1",
-                        "tertiary": "#2d1a00",
-                        "on-primary-container": "#799dd6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "section-gap-md": "48px",
-                        "container-max": "1280px",
-                        "base": "4px",
-                        "section-gap-lg": "80px",
-                        "margin-mobile": "16px"
-                    },
-                    "fontFamily": {
-                        "label-sm": ["Inter"],
-                        "body-md": ["Inter"],
-                        "headline-lg": ["Sora"],
-                        "display-hero-mobile": ["Sora"],
-                        "body-lg": ["Inter"],
-                        "headline-xl": ["Sora"],
-                        "headline-md": ["Sora"],
-                        "display-hero": ["Sora"]
-                    },
-                    "fontSize": {
-                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
-                        "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "display-hero": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-                    }
-                },
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#001e40",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#799dd6",
+                      "surface-dim": "#d3daef",
+                      "primary-fixed-dim": "#a7c8ff",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed": "#291800",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#ffb955",
+                      "on-background": "#141b2b",
+                      "tertiary-fixed": "#ffddb4",
+                      "tertiary": "#2d1a00",
+                      "inverse-surface": "#293040",
+                      "primary-container": "#003366",
+                      "background": "#f9f9ff",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#d48c00",
+                      "tertiary-container": "#492d00",
+                      "secondary-fixed-dim": "#79dd68",
+                      "inverse-primary": "#a7c8ff",
+                      "on-primary-fixed": "#001b3c",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#e1e8fd",
+                      "surface-container-highest": "#dce2f7",
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "surface": "#f9f9ff",
+                      "outline-variant": "#c3c6d1",
+                      "on-surface": "#141b2b",
+                      "surface-variant": "#dce2f7",
+                      "secondary-container": "#94fa81",
+                      "secondary-fixed": "#94fa81",
+                      "on-tertiary-fixed-variant": "#633f00",
+                      "surface-container-low": "#f1f3ff",
+                      "on-surface-variant": "#43474f",
+                      "surface-tint": "#3a5f94",
+                      "on-secondary-fixed": "#002200",
+                      "on-secondary-container": "#027507",
+                      "on-primary-fixed-variant": "#1f477b",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#005303",
+                      "surface-bright": "#f9f9ff",
+                      "surface-container": "#e9edff",
+                      "inverse-on-surface": "#edf0ff",
+                      "primary-fixed": "#d5e3ff",
+                      "secondary": "#006e05",
+                      "outline": "#737780"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "4px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "section-gap-md": "48px",
+                      "section-gap-lg": "80px"
+              },
+              "fontFamily": {
+                      "display-hero-mobile": ["Sora"],
+                      "display-hero": ["Sora"],
+                      "body-lg": ["Inter"],
+                      "headline-xl": ["Sora"],
+                      "headline-md": ["Sora"],
+                      "headline-lg": ["Sora"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "display-hero": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}]
+              }
             },
+          },
         }
     </script>
 </head>
-<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- Top Navigation Bar -->
-<header class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-background/70 backdrop-blur-md border-b-2 border-primary/10 shadow-sm">
-<div class="max-w-[1280px] mx-auto flex justify-between items-center h-20 px-gutter">
-<a class="font-headline-md text-headline-md font-bold text-primary" href="index.html">RDS College</a>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors" href="about.html">About</a>
-<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors" href="academics.html">Academics</a>
-<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors" href="admissions.html">Admissions</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="facilities.html">Facilities</a>
-<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors" href="gallery.html">Life</a>
-</nav>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopNavBar -->
+<nav class="bg-surface/70 backdrop-blur-md dark:bg-primary/70 docked full-width top-0 sticky z-50 border-b-2 border-primary/10 shadow-sm h-20 flex items-center">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+                RDS Independent PU College
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary pb-1 font-body-md text-body-md transition-all" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md" href="#">Academics</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md" href="#">Admissions</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md" href="#">Facilities</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md" href="#">Life</a>
+</div>
 <div class="flex items-center gap-4">
-<button class="px-6 py-2 rounded-full border border-primary text-primary font-label-sm hover:bg-surface-container-low transition-all active:scale-95">Login</button>
-<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-sm hover:opacity-90 shadow-md transition-all active:scale-95">Apply Now</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm scale-95 active:scale-90 transition-transform hover:shadow-lg">
+                    Apply Now
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Section 1: Hero Section -->
+<header class="relative w-full h-[716px] flex items-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-6 uppercase tracking-wider">ESTABLISHED 1998</span>
+<h1 class="font-display-hero text-display-hero text-primary mb-6">Legacy of Excellence</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Nurturing bright minds and building future leaders through a rigorous academic curriculum and a values-based education system in the heart of our vibrant campus.</p>
+<div class="flex gap-4">
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm text-label-sm transition-transform hover:scale-105 shadow-md flex items-center gap-2" href="#message">
+                        Discover Our Story
+                        <span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 w-1/2 h-full hidden lg:block">
+<div class="w-full h-full clip-path-polygon-[20%_0,100%_0,100%_100%,0%_100%] bg-primary-container relative overflow-hidden">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="A cinematic, wide-angle shot of a grand, modern college campus facade with glass architecture and lush green landscaping under a clear blue sky. The lighting is bright and high-contrast, emphasizing the prestigious, royal blue and white color scheme of the institution. The style is professional architectural photography with a focus on academic authority and modern growth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8STAnBmdcVp-y3xI2ltOjQ6NUyeoft4DZomlkxBTjDuN9kH1MjRCE5neuVTpDtEjiRCerhc9LBqYL-8DbJEVsxMRhngOWUhaQsWtU_tWKJ7oXstCWHNTv1Jq2ATE9O2FmlTlZIqBOVJizejtIpI18FcftPBoZnltX5DbsXkzimLhkrS1xPxjMO_XgEjqXyqW5vdbAS2AyUM633uIU-iQwCu4Cc_vWXwaG5yevQ1KJ3vqVNXTD2K1yxL4BdtwDax1HvhB2Etmd8co"/>
 </div>
 </div>
 </header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent"></div>
-<div class="relative z-10 max-w-[1280px] mx-auto px-gutter text-center">
-<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm mb-6">Our Infrastructure</span>
-<h1 class="font-display-hero text-display-hero text-primary mb-6 max-w-4xl mx-auto leading-tight">
-                    World-Class Infrastructure for Holistic Learning
-                </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                    Designed to inspire curiosity and foster excellence, RDS Independent PU College provides students with an environment that balances academic rigor with modern comfort.
+<!-- Section 2: Principal's Message -->
+<section class="py-section-gap-lg px-gutter max-w-container-max mx-auto" id="message">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 relative group">
+<div class="absolute -inset-4 bg-secondary/10 rounded-2xl -rotate-2 group-hover:rotate-0 transition-transform"></div>
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden shadow-xl border-4 border-white">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of Dr. Rajesh Patil, an elderly man with a kind smile and wise eyes, wearing a formal suit. He is seated in a sunlit academic study filled with leather-bound books and traditional wooden furniture. The lighting is soft and warm, conveying a sense of mentorship, leadership, and institutional trust, aligned with a premium educational aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD99-KJ_zgFzGROQlKS3vH76POypQxCShj2LaUQ0_8J9xAkLYNFubG_5VqzEU2Eu3Rjj1cXvAsPjELi_sQYZTAb41SbYi4q6FWc-xuUXTszfJJihf-4zVELGcFoUrffAkvFK24MGnvyf2OGOsIaBPCCZJnlCbMxdWZ2YcrXbODcDmWsczu53xZtw5ixn9ssFkQ35venowkKa3ZubrROE18OYIh4KH8N6HK0JFUfoF_mO4FmdXiIZKnjZ8TShCDzunfIapNMhWboEdI"/>
+</div>
+<div class="absolute bottom-6 -right-6 bg-primary p-6 rounded-lg text-on-primary shadow-2xl max-w-[200px]">
+<h4 class="font-headline-md text-headline-md leading-tight">25+ Years</h4>
+<p class="font-label-sm text-label-sm opacity-80">of Academic Leadership</p>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-6">
+<span class="text-secondary font-bold tracking-widest uppercase">From the Desk of the Principal</span>
+<h2 class="font-headline-xl text-headline-xl text-primary">Dr. Rajesh Patil</h2>
+<div class="w-20 h-1.5 bg-secondary rounded-full"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic leading-relaxed">
+                    "At RDS Independent PU College, we don't just teach subjects; we ignite curiosity. Our mission is to provide an environment where students feel empowered to question, explore, and excel. We believe in the holistic development of every individual who walks through our gates."
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Our legacy is built on the success of our alumni who are making significant contributions globally. We invite you to join this tradition of academic rigor and personal growth. Together, we will build the foundation for your brilliant future.
+                </p>
+<div class="pt-4">
+<img class="h-16 w-auto opacity-80" data-alt="A clean digital rendering of a handwritten signature of Dr. Rajesh Patil in deep blue ink on a white background, symbolizing authority and personal commitment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-h7dRZMnaE-yiWFsXD5vyoh3wmEmcef2iJY8dpEppU2o8x7zpvlXIJPgr7bns3wU5JsV_d__7Cu_OlZSIywt9DXlTCUmIaBX1l8uM2S1jhkjO184gJuaEL8YRvSvCpEa-f1x8PbVFCOgZdSWvd9f-vegW5ex-BBUmUlcAAGB_aRm8HTv16D3yOPVDt-nijx47cVHSK3DRcc60xFlIcoCftTod6FuvyVy4zCYLlusbNP1OLeMwreEqHKQyz4IpKQz_BCb7ZtRaHFI"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Vision & Mission -->
+<section class="bg-surface-container py-section-gap-lg">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Vision Card -->
+<div class="glass-card p-12 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 group border-l-8 border-primary">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">visibility</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-6">Our Vision</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    To be a global benchmark in pre-university education, fostering a community of critical thinkers, lifelong learners, and ethical leaders who are prepared to navigate the complexities of the 21st century with confidence and integrity.
                 </p>
 </div>
-</section>
-<!-- Facility Grid Section -->
-<section class="max-w-[1280px] mx-auto px-gutter py-section-gap-lg">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Library -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A modern, high-ceiling college library with rows of mahogany bookshelves, minimalist study pods with soft warm task lighting, and students quietly reading. The atmosphere is scholarly and premium, featuring a neutral color palette with royal blue upholstery accents. Sunlight streams through large floor-to-ceiling windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvWNbGzvUNIgrVyosUUYPE95s0xayv0_xRQjZcFBMQ_ddj64JFDAtePNJpT6hYGqGfbMfYfn07-0DkiHVTWu5tNUibMAgUIdN1tZgy_KLixFmGkNBb1ObRpOKspzXqipiUTQq38aW5uFgD_KtJdSlm02xDUFd9snrZm001AbTP090yqBmd56LNSZZ621CRKgSpSDSfmvcxFce9D7brcjR3yXydGjjHem6Qht_Ut6D9mcOPXfP4cJVDQ0nKGnxKvmERbQ_1LN3SIRw"/>
+<!-- Mission Card -->
+<div class="glass-card p-12 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 group border-l-8 border-secondary">
+<div class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[32px]">rocket_launch</span>
 </div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">menu_book</span>
-<h3 class="font-headline-md text-headline-md text-primary">Library</h3>
-</div>
-<p class="text-on-surface-variant mb-4">A vast collection of over 20,000 volumes across diverse academic disciplines.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Digital Journal Access</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Quiet Study Zones</span>
-</li>
-</ul>
+<h3 class="font-headline-lg text-headline-lg text-secondary mb-6">Our Mission</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    To provide high-quality academic instruction through innovative teaching methodologies, while maintaining a strong focus on character building, community service, and extracurricular excellence that transcends the classroom.
+                </p>
 </div>
 </div>
-<!-- Physics Lab -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A cutting-edge physics laboratory for a premium college, featuring high-end optical benches, laser experimental setups, and digital oscilloscopes on clean white countertops. The room is brightly lit with cool white LED panels, reflecting off polished gray floors. Blue and silver accents maintain the institutional RDS brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnO4wYu2LGrYHJJJ554HLEHN-C53BZVf5T0FTb1P3MVVC-G7ISD87iSw2tSond66Cw6a9ULKUShsujBsHYIIDMEGYb8pha0FVidhwlJIVxP47Le9B0YM25qxXMkZvvW8npZSnv6-LyB1mZqj4FD2hS4zOQNQuDQvgueDtwbqbqCQ3ZprHIndmtxvtzDvg5hqqmZQzDkYxmSDbxae3rep4F5gGwNyDhjjhnZQVF0EeosCdo-5HkZtVJcmH44LMX2n4JcsTJ9rIP8uA"/>
+</section><section class="py-section-gap-lg px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Teaching Methodology</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Our approach combines traditional academic rigor with modern interactive techniques, ensuring every student is actively engaged in their learning journey.</p>
 </div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">experiment</span>
-<h3 class="font-headline-md text-headline-md text-primary">Physics Lab</h3>
-</div>
-<p class="text-on-surface-variant mb-4">Equipped for advanced experiments in mechanics, optics, and electronics.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Precision Instruments</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Safety Standard Grade</span>
-</li>
-</ul>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<div class="relative aspect-video rounded-2xl overflow-hidden shadow-lg group">
+<img alt="Interactive classroom session" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBchkwkSGaBX58itfwfzPhi-DVEki_Ga2WY0vld7iQiDvPRS5id1du1hefDBq1-zMjHJsQpBEnYW8XtI5q9pl-ERwkEPeHtk898p1a8yOwtkmatcBVipp3-0n-qBAoSM8IbjCWkpUYg_18dRke2cOggetYbFnK3udaKuq8uQ3TWCXUAWyk7eTxKQljoIlUQ39KSuzxELPF6jus5R1xfJGvlVCuPWaEd3-gEI-0U0QhsBDAKig8-yrsmVh0RoKo-Y-I6Zg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<p class="text-on-primary font-body-md">Interactive lectures fostering critical thinking and open dialogue.</p>
 </div>
 </div>
-<!-- Chemistry Lab -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A professionally equipped chemistry lab with specialized fume hoods, glass-walled chemical storage, and organized titration stations. The setting is sterile and organized, with safety equipment like eye-wash stations clearly visible. The lighting is bright and even, highlighting the clean, modern design of the laboratory benches." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsCQ0q7TBX1lYKgjIrtUACz6deL4P3uM7_WLtC3GIR3vJzReCONkmJM4eXyEMCW0ca2Y1-ccIHDxdiLfXZojsmakqBRJIr0U1BCxDnR80yXmGD4lxsZ_cpqyQw3lY7mp9plPuJ4PQAdTAtJcJPcrOFLKMbGVv00KRfEUxsbW8PdKHdK3gZtNxVo9GQqDdFxigTJRVc5_sJp-jEiMrFW7LroLItWymgLhyRUeKuh2zBH4wq1jS2NRMzNURBp__UAdSMGQIWK6NhZxE"/>
+<h3 class="font-headline-md text-headline-md text-primary">Engaged Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Small class sizes allow for personalized attention and meaningful interaction between faculty and students, creating a supportive academic community.</p>
 </div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">science</span>
-<h3 class="font-headline-md text-headline-md text-primary">Chemistry Lab</h3>
-</div>
-<p class="text-on-surface-variant mb-4">Safe, ventilated workspace for analytical and synthetic chemistry experiments.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Modern Fume Hoods</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Digital Centrifuges</span>
-</li>
-</ul>
+<div class="space-y-6">
+<div class="relative aspect-video rounded-2xl overflow-hidden shadow-lg group">
+<img alt="Faculty mentoring students" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTgqdXDYfGJg87DRZkOoxMkXis9YurymtNL1yua_E_MjNS-tRN5BOdBmmk0J0xbsVzw4hq1oydolqrkfGR_hmVA3uzIhDdaI6lA-DH052UGyx3eC9VXR09fZYn6cYXXLSyvshT-TXBSweBLCcV10rTGHGcEvLOVD56C1oXcazLoPW_dvEEI_cAf95cKE1bSoz51YRV9PqT1-3a7YDzv61QGL1keBeu0JXnZcZQ9aaTTX4zLMN_jaAFurhoa7WApfz_Gg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<p class="text-on-primary font-body-md">Hands-on guidance and mentorship in every classroom.</p>
 </div>
 </div>
-<!-- Biology Lab -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A college biology laboratory with high-resolution digital microscopes, anatomical models, and botanical specimens. The design is contemporary with white workstations and ergonomic chairs. A soft green accent wall complements the academic green brand color. The lighting is soft but precise for detailed observation work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeNWJjoJDA2C-x9UqsyNd1MIImun3xKcaIodB8m0UurrQZ89v8y8C2yLtwmM1SJUPVGOuiKy4b1MiQe25X5oMAa7zMGsQvzNXhwz8Oyl-JWZHKrCVHeNHlxUhZuQce-6GD5BE9c_fMwyIHT23RAtLS6YtQigwKjU0oST29VGrKGiMO7vmWSwl9fUYUI55ohHoqTSWmq94Uoo9FVSAKNEY92KTS3V0WUnmDs4sbrLF4Acr5f2EXRXf1WctfLz2JqNiosEpfcZHKGJQ"/>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">biotech</span>
-<h3 class="font-headline-md text-headline-md text-primary">Biology Lab</h3>
-</div>
-<p class="text-on-surface-variant mb-4">Explore the wonders of life sciences with state-of-the-art microscopy.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Digital Microscopes</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Specimen Preservation</span>
-</li>
-</ul>
-</div>
-</div>
-<!-- Computer Center -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A high-tech computer lab with high-performance desktop computers arranged in ergonomic pods. Minimalist cables, mechanical keyboards, and dual-monitor setups for advanced coding. The room features a dark ceiling with accent blue neon lighting strips, creating a forward-thinking, professional tech environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcBCTNBJmhY0UG5ekqYdS1W0YxDYQR3uREAAZp2x1ClhFvUbZSeX80WDvy7CQy9I1gpzB7erv4a1VZU_yj-LJpb2lMRRSdHOhvFQeRBCJJ_QPJqZI_ykbhTvLnDxmXcpzCkqvkTgoRcA35AGAAxGtqmcHEDaiGm4oQqjDamVoaC1k9shLky59Oq2z3g6TJBJV2FmIn-oFlnACEjcORNvxuuQzteo8AMkWNcFg_vQHlFiLdFnGPRI0QpApc-8io1ZV3qmoMx-CS7bY"/>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">computer</span>
-<h3 class="font-headline-md text-headline-md text-primary">Computer Center</h3>
-</div>
-<p class="text-on-surface-variant mb-4">High-speed computing lab supporting coding, AI research, and design.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Gigabit Internet</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Advanced Software Suites</span>
-</li>
-</ul>
-</div>
-</div>
-<!-- Smart Classrooms -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A premium college classroom featuring an interactive smart board, tiered ergonomic seating, and individual charging ports for laptops. The walls are finished in a clean white with royal blue acoustic panels. The mood is focused and academic, with diffused natural lighting through blinds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHbRZT1Z6kuw17P0rdETSD9tYuYim0_hsiKg4uQ2bLgsFa0uQ4NEDRRHx5izz90gT3Cg8NwlaREzzrQkEmHm7Ply-EfQKAcYqH8g67d9vSirUQjlJ7Kasu_jAnhspOvDQDulttbGnFCkViYVXlJODVl_hxL5PxSY0e-5mGxoSrnekipOJF32D3XDX_DVGSWGHTHfvAnkHqUt88LsiP8DZ8XCQn1xhYd17ZGrx62CmPyTDDEoGxhFgt3rq-rFT1UkDn2t3x6awp-5E"/>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">smart_display</span>
-<h3 class="font-headline-md text-headline-md text-primary">Smart Classes</h3>
-</div>
-<p class="text-on-surface-variant mb-4">Classrooms equipped with interactive boards and audio-visual systems.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Digital Whiteboards</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Lecture Recording</span>
-</li>
-</ul>
-</div>
-</div>
-<!-- Sports Complex -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A sprawling indoor sports complex with polished wooden courts for basketball and badminton. Professional athletes are seen in the distance, and the facility is clean and high-end. Large skylights provide ample natural light, while the RDS college logo is elegantly displayed on the main wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ak3mLfPjJ1NYAzhO6YYMEmQnjjIM-p7cTe4psGpEIXtewCNqovSzyaj2vSR7xozzWKXCEkAM4Sv3zxvuH7COO5q0v3BuXkWVFwzNvqAQT1ufX96E-QGr-6pKnvn-q46mjeWbxayXrM-Nc2Gm7U0FP0Y48nJbm1HXa-romZPIxq2Jsu87c2Sw2-gX6gryIbI9sjci_EbsSxoHNqX4lpH-045Sv1XtqkV3Jw_xdGz8t60hlKYHHMjPOlWqXdK1DCc7V2or87ncyL4"/>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">sports_basketball</span>
-<h3 class="font-headline-md text-headline-md text-primary">Sports Complex</h3>
-</div>
-<p class="text-on-surface-variant mb-4">Promoting physical fitness with indoor and outdoor sports facilities.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Indoor Stadium</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Professional Coaches</span>
-</li>
-</ul>
-</div>
-</div>
-<!-- Transport -->
-<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-<div class="h-48 w-full relative overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A fleet of modern, clean college buses branded in royal blue and white, parked in an organized campus bay. The buses are equipped with GPS trackers. The background shows the lush green campus of RDS college under a clear blue sky, emphasizing safety and reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJHFBOHr9NOlyCtQx_YUjHH1gB3v5dg0LjB2pHlAovEvd9ffs1IPm_FTk20cz7TgdMA1mhG0fpqLHxb8GfTSwYqQF1I6UvFd_lgwip2aIigSu-8at4K_mA73aldLrbq_w46Shhf0QpyKe6hxK8UBqRHwAJsBG7WiUpZWlc8pUWuTROSHJsDbTyHajc259wIKfLyFseemI9hEgn8FSQSa56lKN30X3CnpQ3stc2qHvk0N0K9eMctmpQy0KKQwvJ356sjHDhAFEESEI"/>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 text-secondary mb-3">
-<span class="material-symbols-outlined">directions_bus</span>
-<h3 class="font-headline-md text-headline-md text-primary">Transport</h3>
-</div>
-<p class="text-on-surface-variant mb-4">Safe and punctual transportation covering all major parts of the city.</p>
-<ul class="space-y-2">
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>GPS Tracking</span>
-</li>
-<li class="flex items-start gap-2 font-label-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-<span>Trained Staff</span>
-</li>
-</ul>
-</div>
+<h3 class="font-headline-md text-headline-md text-primary">Practical Application</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We bridge the gap between theory and practice through collaborative projects and real-world problem-solving exercises.</p>
 </div>
 </div>
 </section>
-<!-- Hostel & Dining Section -->
-<section class="bg-surface-container py-section-gap-lg">
-<div class="max-w-[1280px] mx-auto px-gutter">
-<div class="flex flex-col lg:flex-row items-center gap-16">
-<div class="lg:w-1/2 space-y-8">
-<div>
-<span class="inline-block px-4 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm mb-4">A Home Away From Home</span>
-<h2 class="font-headline-xl text-headline-xl text-primary leading-tight">Premium Residential &amp; Dining Experience</h2>
-<p class="text-body-lg text-on-surface-variant mt-4">We understand that a comfortable living environment is crucial for academic success. Our hostel facilities are designed to provide students with a secure, nurturing, and collaborative space.</p>
+<!-- Section 4: Management Board -->
+<section class="py-section-gap-lg px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Board of Management</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Guided by visionaries with decades of experience in the educational sector, our management ensures the highest standards of institutional growth.</p>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="bg-surface p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
-<div class="p-3 bg-primary-fixed rounded-lg text-on-primary-fixed">
-<span class="material-symbols-outlined">bed</span>
-</div>
-<div>
-<h4 class="font-headline-md text-[18px] text-primary">Cozy Rooms</h4>
-<p class="text-on-surface-variant text-sm mt-1">Single and shared options with ergonomic furniture.</p>
-</div>
-</div>
-<div class="bg-surface p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
-<div class="p-3 bg-primary-fixed rounded-lg text-on-primary-fixed">
-<span class="material-symbols-outlined">restaurant</span>
-</div>
-<div>
-<h4 class="font-headline-md text-[18px] text-primary">Healthy Dining</h4>
-<p class="text-on-surface-variant text-sm mt-1">Nutritious, multi-cuisine meals prepared with hygiene.</p>
-</div>
-</div>
-<div class="bg-surface p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
-<div class="p-3 bg-primary-fixed rounded-lg text-on-primary-fixed">
-<span class="material-symbols-outlined">wifi</span>
-</div>
-<div>
-<h4 class="font-headline-md text-[18px] text-primary">Campus Wi-Fi</h4>
-<p class="text-on-surface-variant text-sm mt-1">High-speed connectivity for late-night research.</p>
-</div>
-</div>
-<div class="bg-surface p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
-<div class="p-3 bg-primary-fixed rounded-lg text-on-primary-fixed">
-<span class="material-symbols-outlined">security</span>
-</div>
-<div>
-<h4 class="font-headline-md text-[18px] text-primary">24/7 Security</h4>
-<p class="text-on-surface-variant text-sm mt-1">Gated security and resident wardens for safety.</p>
-</div>
-</div>
-</div>
-<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm shadow-lg hover:opacity-90 active:scale-95 transition-all">Download Hostel Brochure</button>
-</div>
-<div class="lg:w-1/2 relative">
-<div class="absolute -top-4 -left-4 w-24 h-24 bg-secondary-fixed rounded-full blur-3xl opacity-30"></div>
-<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary-fixed rounded-full blur-3xl opacity-30"></div>
-<div class="grid grid-cols-2 gap-4">
-<div class="space-y-4">
-<img class="w-full h-64 object-cover rounded-2xl shadow-md" data-alt="A upscale student dormitory room with light oak wood furniture, a large window with sheer curtains, and a organized desk for studying. The room is styled with soft textures and modern lighting, appearing like a high-end boutique hotel suite." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCSmUb3UYRlka1hm2GJLp3Si60rrOamU-IzfjBHGrLeaNbykrBqZTwb9yK3OtiKFDSpZMd0RBe58UwFD-9KayNn9Ewsc7tD8qsRACa-yZoPT06YQcPAExYOOobBb-VNkMs7zyvy8Vdn75VnV_NnW9jAGqOQfpq9G-foK7ojoJuCJQXLuSu9Kc2SjuaOQihfIUtGX5hz_7lfR_Idi7tSMJOC7DssvGCqRywMeR7WO_UBwCbqdfnrZ1BRGBDxqUOOYO1pjG5JamWe7g"/>
-<img class="w-full h-80 object-cover rounded-2xl shadow-md" data-alt="A spacious and modern college cafeteria with a clean white and blue color scheme. Students are sitting at wooden communal tables. The food service counter is minimalist and clearly organized, offering fresh fruits and healthy meals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5h1sk0u9z3QdS1OOaAiSOG1IlX6HDHbmNF6lW86yk9FxSjmH8AqzJGOtdmR1Wzb25QoA2ppCVDx4C4ucsyGr7wwOn70dQFZuihRCo8BvNGKUakvCgSwyt_GXHDssDydOZNFFZBEKoRMeCHVFq0aiI5R7-Z_cm5phb3SAPFbI1hDoB-D32xfiu1XsViFFGPjByrNGjy_JVXleh7v5th3EtTjMtjpvdiYQKJjofYWWXaVCSOpfb2PW_NhFHndoCtbEmN4TCVpUlQ20"/>
-</div>
-<div class="pt-12 space-y-4">
-<img class="w-full h-80 object-cover rounded-2xl shadow-md" data-alt="A student lounge area within a hostel, featuring comfortable bean bags, a TV, and a small library shelf. Large windows show the college gardens outside. The vibe is social and relaxed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsE80u5vNyRmEZheYI7Anwds0IsJND5ZX8-p0erUucYbb4SgBiuQQ-oifjYxGpy4kagj9EGWynIhWKdAbTXOzY7fBMqjOK6t1RgPHJAf17adLZBSzqXrVWLwh9NN11nKH_DjSccktXYKAjv2XS3qENVpjRfvmhFTqVicOk3pRWKHXNjl2UUKSQ24tvcR8ubH2TfeyqAVslASVtVSEDzuQZLeRAUWTVHqVTVPNGIyqz-DWCTwRh0oJ8XTJPdsjkxtFD-Lej83yB_uY"/>
-<img class="w-full h-64 object-cover rounded-2xl shadow-md" data-alt="A close up of a healthy, beautifully plated meal in the college dining hall, featuring a mix of grains, vegetables, and protein, emphasizing the quality of student nutrition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJDIcOHf7aF1IJcBuQBAEMtQ8CntIjWnToKgfsUHM1HYI0RatMqduvBOaNnluDjqLAROTuFOs4-fEFs4D58ovtFOqXZYjZ9E8WudF63vNl_qFvBEL0tIGJK3fqr6-nxAjv01fIjL8lbENzg-ab6lULKmch7yzxWLtp2lmmZ-JH_En6VHmEPMbTZperObsrbxdg0MjhsvqSMfaEllfVF4ZP6Lw7MWlMzzeE9eKi3rDVwTW8Dt8hZnUyHAbyKev-S8A1RN13THcFweI"/>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Board Member 1 -->
+<div class="group">
+<div class="relative h-80 w-full overflow-hidden rounded-xl mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A formal professional headshot of a senior male board member in a navy blue suit, standing against a soft gray backdrop. The lighting is studio-quality, clean, and highlights a look of professionalism and corporate authority. The color palette is muted and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmjltAxsKqX3YBzETfMaBgujB6fJ5I5cAmxIlDfG49W0BGkxUgvR4ULJzMr00PLCr7e2vQ4WI3TOqgSyZIjTZnyloXURr9CCI_7UJG_O2VwwWEfmC1LG8GwHMFhYJvh_rXBAaGnxLCLwU70gZvANnh4cSZhhNSaIpzf9xmyWaLeT4UhI0-wRzK8tiCHLVx4__eZE1R9OG3LH46sswEe789mPU1XeHD6WisKNyCIVbYzNNrrNbioKzXqLkUy-rl2dMvGlEbL3HT52E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-on-primary">
+<p class="font-label-sm text-label-sm mb-2">MBA, Harvard University</p>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="material-symbols-outlined text-[18px]">alternate_email</span>
 </div>
 </div>
 </div>
 </div>
+<h4 class="font-headline-md text-headline-md text-primary">Sri. M.N. Rao</h4>
+<p class="text-secondary font-semibold font-label-sm">Chairman</p>
 </div>
-</section>
-<!-- CTA Section -->
-<section class="py-section-gap-lg">
-<div class="max-w-[1280px] mx-auto px-gutter">
-<div class="bg-primary-container rounded-3xl p-12 text-center text-on-primary-container relative overflow-hidden">
-<div class="absolute inset-0 opacity-10"></div>
-<div class="relative z-10">
-<h2 class="font-headline-xl text-headline-xl mb-6">Want to see the campus for yourself?</h2>
-<p class="text-body-lg max-w-2xl mx-auto mb-10 text-on-primary-container/80">Join one of our weekly campus tours and explore the laboratories, libraries, and common areas that make RDS a premier educational hub.</p>
-<div class="flex flex-wrap justify-center gap-4">
-<button class="bg-on-primary-container text-primary-container px-10 py-4 rounded-full font-label-sm shadow-xl hover:bg-surface-container-low transition-all active:scale-95">Book a Campus Tour</button>
-<button class="border border-on-primary-container text-on-primary-container px-10 py-4 rounded-full font-label-sm hover:bg-primary/20 transition-all active:scale-95">Virtual 360 Tour</button>
+<!-- Board Member 2 -->
+<div class="group">
+<div class="relative h-80 w-full overflow-hidden rounded-xl mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A formal professional headshot of a middle-aged female board member with elegant styling, wearing a silk saree and pearls. She is in a bright, modern office environment with a professional and friendly demeanor. The image conveys leadership, grace, and educational expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKEEjaapksgjQSZUCW6s_oB6scLXFVqjWmF3Zj6i5Dk4R7CErcfsmb_WNbl2cgEOZi8C6h0x2mw0tjKRFbzgCihgAetRyJqNMRg_3CTmnaJUkc8Hbgi96tFEo_cobq-IlwmMwiiiFz9dsZEG5rzWxgvlAja7dHLQqFFYpBy7Ir7rY14fm1gB02TPtYXyJHehPPTCbf4R9pEYmb1Zc91lCjBuABdHVQic0FNartFBJKcf2nOYEPJnCIr1MT6nx5xW__gs5lpmVc9vU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-on-primary">
+<p class="font-label-sm text-label-sm mb-2">PhD in Education</p>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-[18px]">share</span>
 </div>
 </div>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Smt. Geeta Reddy</h4>
+<p class="text-secondary font-semibold font-label-sm">Secretary</p>
+</div>
+<!-- Board Member 3 -->
+<div class="group">
+<div class="relative h-80 w-full overflow-hidden rounded-xl mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A formal headshot of a younger male administrator in business attire, looking focused and determined. The background is a blurred academic library, giving a sense of intellectual depth and administrative modernism. The lighting is crisp and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzc4xD8cqaEKt9PSQI-que80vEFIwcY2KMe8QuwUlNGhaKIoEYCfKbJsXrECeelIfXMEm5YaFNgWAXDaFaz3QpCaegfBmueMuChJNS3_GM7aTuiCbgkLkzg3BajEiysYwk6aNf3Jkpd8VFyWiKsZwvax2VD9krXNtihYW70-bv-JjgUFAV9qW6YOAMpENeRitKxkqZz4SDIigzMxa41EezTz8wrgw45QD8HMKugU8Bc2YEIkJVr5xYRWJRQx9na7ccU5kWJWd3-Cw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-on-primary">
+<p class="font-label-sm text-label-sm mb-2">Financial Advisor</p>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</div>
+</div>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Sri. Amit Shah</h4>
+<p class="text-secondary font-semibold font-label-sm">Treasurer</p>
+</div>
+<!-- Board Member 4 -->
+<div class="group">
+<div class="relative h-80 w-full overflow-hidden rounded-xl mb-4">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A professional headshot of an experienced male board member with grey hair, wearing a tweed jacket and glasses, suggesting deep academic roots and wisdom. He is standing in front of a colonial-style brick college building. The image radiates tradition and stability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvUNZXeJbxrji2LyyAgKyqRQoVIllVpM41aafg60Y2KonUxeDyJ20zwo31M9YF2PTD3YT3pUD2Z9gM3CHbNDf4f1GSQFqVdGqnqU9jPZDSz6KyZbcRJGMOnRoye064ez1gMOIb9MFp1X9SRrIsIAwr5Y7DZgZgdeN-cthUO85k34dNg3qDL9bGifpZCkbwEPsRV7PTNj1AgdcIBdiNYcqWYTcelfXUR0IdkuKHbcqbath8Way0krbhZ8ixnJUzdO-ptvhj0Cybovw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-on-primary">
+<p class="font-label-sm text-label-sm mb-2">Ex-Vice Chancellor</p>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</div>
+</div>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Dr. V.S. Murthy</h4>
+<p class="text-secondary font-semibold font-label-sm">Trustee</p>
 </div>
 </div>
 </section>
-</main>
 <!-- Footer -->
-<footer class="bg-on-background w-full mt-section-gap-lg">
-<div class="max-w-[1280px] mx-auto px-gutter py-section-gap-md grid grid-cols-1 md:grid-cols-4 gap-8">
-<div class="space-y-4">
-<a class="font-headline-md text-headline-md font-bold text-primary-fixed" href="index.html">RDS College</a>
-<p class="text-surface-variant/80 font-body-md">Empowering the next generation of leaders through excellence in education and character building.</p>
-</div>
-<div class="space-y-4">
-<h4 class="text-primary-fixed font-bold">Quick Links</h4>
-<ul class="space-y-2">
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors font-body-md" href="events.html">Academic Calendar</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors font-body-md" href="downloads.html">Downloads</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors font-body-md" href="faculty.html">Faculty Directory</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors font-body-md" href="news.html">Latest News</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="text-primary-fixed font-bold">Information</h4>
-<ul class="space-y-2">
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors font-body-md" href="admissions.html">Admissions</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors font-body-md" href="academics.html">Academics</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors font-body-md" href="facilities.html">Facilities</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="text-primary-fixed font-bold">Contact</h4>
-<p class="text-surface-variant/80 font-body-md">123 Education Lane, Knowledge Park, Bengaluru, 560001</p>
+<footer class="bg-primary dark:bg-primary-container full-width bottom mt-section-gap-lg">
+<div class="w-full py-section-gap-md px-gutter max-w-container-max mx-auto text-on-primary dark:text-on-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+<div class="md:col-span-5">
+<div class="font-headline-md text-headline-md font-bold mb-6">RDS Independent PU College</div>
+<p class="text-on-primary/80 mb-8 max-w-md">Empowering students through holistic education and academic excellence since 1998. Your journey to success starts here.</p>
 <div class="flex gap-4">
-<a class="material-symbols-outlined text-primary-fixed" href="contact.html">mail</a>
-<a class="material-symbols-outlined text-primary-fixed" href="contact.html">phone</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-on-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">qr_code_2</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-on-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-on-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4">
+<h5 class="font-bold mb-2">Quick Links</h5>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">About Us</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Academics</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Admissions</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold mb-2">Support</h5>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Terms of Service</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold mb-2">Community</h5>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Alumni</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Campus Map</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all" href="#">Events</a>
 </div>
 </div>
 </div>
-<div class="max-w-[1280px] mx-auto px-gutter py-6 border-t border-primary/20 text-center">
-<p class="text-surface-variant/50 text-sm">© 2024 RDS Independent PU College. All rights reserved.</p>
+<div class="pt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-body-md text-body-md opacity-80">© 2024 RDS Independent PU College. All rights reserved.</div>
+<div class="flex gap-6">
+<span class="font-label-sm text-label-sm opacity-60">Handcrafted by RDS Design Studio</span>
+</div>
+</div>
 </div>
 </footer>
 <script>
-        // Simple scroll behavior for header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 20) {
-                header.classList.add('shadow-lg');
-            } else {
-                header.classList.remove('shadow-lg');
-            }
-        });
+        // Simple intersection observer for subtle fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, { threshold: 0.1 });
 
-        // Interactive hover effects for cards
-        document.querySelectorAll('.group').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-8px)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
         });
     </script>
 </body></html>
