@@ -1,449 +1,387 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Faculty | RDS Independent PU College</title>
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Faculty Directory | RDS Independent PU College</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.70);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.20);
+        }
+        .cinematic-gradient {
+            background: linear-gradient(135deg, #001e40 0%, #003366 50%, #002244 100%);
+        }
+        .faculty-card:hover .faculty-image {
+            transform: scale(1.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "on-surface-variant": "#43474f",
-                        "on-primary-fixed-variant": "#1f477b",
-                        "on-tertiary": "#ffffff",
-                        "surface-variant": "#dce2f7",
-                        "on-error-container": "#93000a",
-                        "inverse-on-surface": "#edf0ff",
-                        "surface-bright": "#f9f9ff",
-                        "on-tertiary-container": "#d48c00",
-                        "on-background": "#141b2b",
-                        "secondary-container": "#94fa81",
-                        "primary-container": "#003366",
-                        "inverse-surface": "#293040",
-                        "tertiary-fixed": "#ffddb4",
-                        "error-container": "#ffdad6",
-                        "on-tertiary-fixed-variant": "#633f00",
-                        "on-secondary-fixed-variant": "#005303",
-                        "surface": "#f9f9ff",
-                        "error": "#ba1a1a",
-                        "on-secondary-container": "#027507",
-                        "on-primary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary": "#006e05",
-                        "surface-container-low": "#f1f3ff",
-                        "surface-container-highest": "#dce2f7",
-                        "on-secondary-fixed": "#002200",
-                        "on-primary-fixed": "#001b3c",
-                        "tertiary-container": "#492d00",
-                        "on-secondary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "secondary-fixed": "#94fa81",
-                        "surface-tint": "#3a5f94",
-                        "primary-fixed": "#d5e3ff",
-                        "on-surface": "#141b2b",
-                        "primary-fixed-dim": "#a7c8ff",
-                        "on-tertiary-fixed": "#291800",
                         "primary": "#001e40",
-                        "tertiary-fixed-dim": "#ffb955",
-                        "surface-container-high": "#e1e8fd",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "on-surface": "#1a1c1e",
+                        "surface-dim": "#dadadc",
+                        "tertiary-container": "#cca81a",
                         "inverse-primary": "#a7c8ff",
-                        "secondary-fixed-dim": "#79dd68",
-                        "surface-container": "#e9edff",
-                        "outline": "#737780",
-                        "background": "#f9f9ff",
-                        "surface-dim": "#d3daef",
+                        "background": "#f9f9fc",
+                        "inverse-surface": "#2f3133",
+                        "on-background": "#1a1c1e",
+                        "surface": "#f9f9fc",
                         "outline-variant": "#c3c6d1",
-                        "tertiary": "#2d1a00",
-                        "on-primary-container": "#799dd6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
+                        "secondary-fixed": "#ffe16d",
+                        "tertiary-fixed-dim": "#eac339",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeef0",
+                        "glass-fill": "rgba(255, 255, 255, 0.70)",
+                        "primary-container": "#003366",
+                        "outline": "#737780",
+                        "on-primary": "#ffffff",
+                        "gradient-end": "#002244",
+                        "surface-variant": "#e2e2e5",
+                        "on-tertiary": "#ffffff",
+                        "gradient-start": "#003366",
+                        "surface-container-high": "#e8e8ea",
+                        "surface-container-low": "#f3f3f6",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "primary-fixed": "#d5e3ff",
+                        "surface-container-highest": "#e2e2e5",
+                        "on-tertiary-fixed": "#231b00",
+                        "surface-tint": "#3a5f94",
+                        "on-secondary-fixed": "#221b00",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#001b3c",
+                        "secondary": "#705d00",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffe081",
+                        "on-secondary-fixed-variant": "#544600",
+                        "secondary-container": "#fcd400",
+                        "on-tertiary-fixed-variant": "#564500",
+                        "surface-bright": "#f9f9fc",
+                        "on-primary-container": "#799dd6",
+                        "on-surface-variant": "#43474f",
+                        "on-secondary-container": "#6e5c00",
+                        "gradient-mid": "#004080",
+                        "glass-border": "rgba(255, 255, 255, 0.20)",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#4e3e00",
+                        "surface-base": "#f9f9ff",
+                        "tertiary": "#725c00",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f0f3",
+                        "secondary-fixed-dim": "#e9c400"
                     },
                     "spacing": {
+                        "margin-desktop": "64px",
                         "gutter": "24px",
-                        "section-gap-md": "48px",
-                        "container-max": "1280px",
-                        "base": "4px",
-                        "section-gap-lg": "80px",
-                        "margin-mobile": "16px"
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px"
                     },
                     "fontFamily": {
-                        "label-sm": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "label-md": ["Inter"],
                         "body-md": ["Inter"],
-                        "headline-lg": ["Sora"],
-                        "display-hero-mobile": ["Sora"],
-                        "body-lg": ["Inter"],
-                        "headline-xl": ["Sora"],
                         "headline-md": ["Sora"],
-                        "display-hero": ["Sora"]
-                    },
-                    "fontSize": {
-                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
-                        "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "display-hero": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                        "display-lg": ["Sora"],
+                        "headline-lg": ["Sora"],
+                        "body-lg": ["Inter"]
                     }
-                },
-            },
+                }
+            }
         }
     </script>
-<style>
-        .glass-nav {
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .faculty-card:hover .faculty-image {
-            transform: scale(1.05);
-        }
-        .bento-item {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    </style>
 </head>
-<body class="bg-background text-on-background font-body-md">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-md border-b-2 border-primary/10 shadow-md">
-<nav class="max-w-[1280px] mx-auto flex justify-between items-center h-20 px-gutter">
-<a class="flex items-center gap-2" href="index.html">
-<span class="font-headline-md text-headline-md font-bold text-primary">RDS College</span>
-</a>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="academics.html">Academics</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="admissions.html">Admissions</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="facilities.html">Facilities</a>
-<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="faculty.html">Faculty</a>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-glass-fill backdrop-blur-md border-b border-glass-border shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-desktop py-4 flex justify-between items-center">
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight"><a href="index.html" class="hover:text-primary-container transition-colors">RDS Independent PU College</a></div>
+<nav class="hidden md:flex gap-8 items-center"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="academics.html">Academics</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="admissions.html">Admissions</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="facilities.html">Facilities</a><a class="font-label-lg text-label-lg text-primary border-b-2 border-secondary-container font-bold py-1" href="life.html">Life</a></nav>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-lg transition-transform active:scale-95 hover:bg-primary-container">
+                Apply Now
+            </button>
 </div>
-<div class="flex items-center gap-4">
-<button class="hidden lg:block font-body-md text-body-md text-on-surface-variant hover:text-primary px-4 py-2 transition-all">Login</button>
-<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-body-md font-bold hover:shadow-lg active:scale-95 transition-all inline-block" href="admissions.html">Apply Now</a>
-</div>
-</nav>
 </header>
-<main class="pt-20">
 <!-- Hero Section -->
-<section class="relative h-[614px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40 z-10"></div>
-<img class="w-full h-full object-cover" data-alt="A grand view of a modern college campus library with towering glass windows, floor-to-ceiling bookshelves, and students engaged in collaborative study. The lighting is warm and intellectual, reflecting a prestigious academic atmosphere. The overall style is clean and architectural, utilizing the deep royal blue and light gray color palette of RDS College." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZkUcQv_Mpd09ouibRm7A_7o7u-FHf-CWXSlt5qkoBSE5YYiGZjGkf9wx3rHOdfEo25Hj5udo5OwqiPxYUdgnc7WAVxZGBZBQsRysbRgDSn5O0EHQeZOEoJ9kvCd6mn0Fl5PphFHtpwQerP6n8qOJwF2nC1zxJ-n1wh3S9frKTssR2mKjZGEFmpyT5ryZF5JMbKBdi5x3Ft-p1iGFhF2FZm-89cyiZ9YEmm2ExOh-H-X7TdxHy2FylOt-pYL-tQk_lcBz6XdRiRiE"/>
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 cinematic-gradient overflow-hidden">
+
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center">
+<div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary-container/20 border border-secondary-container/30 text-secondary-fixed font-label-md">
+                ACADEMIC YEAR 2026-27
+            </div>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-6 leading-tight max-w-3xl mx-auto">
+                Mentors of Excellence. Architects of Future.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-2xl mx-auto">
+                Meet our distinguished faculty board—a community of NET/KSET qualified educators dedicated to shaping the next generation of leaders through personalized mentorship and academic rigor.
+            </p>
 </div>
-<div class="relative z-20 max-w-[1280px] mx-auto px-gutter w-full">
-<div class="max-w-3xl">
-<span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider">Our Faculty</span>
-<h1 class="font-display-hero text-display-hero text-on-primary mb-6 leading-tight">Guided by Experts, Inspired by Excellence</h1>
-<p class="font-body-lg text-body-lg text-on-primary/80 max-w-2xl">Meet the distinguished educators and visionary leaders shaping the next generation of academic pioneers at RDS College.</p>
+</section>
+<!-- Department Filters & Search -->
+<section class="py-12 bg-surface-container-low border-b border-outline-variant/30 sticky top-[72px] z-40 backdrop-blur-md bg-white/80">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-wrap gap-3 justify-center md:justify-start">
+<button class="dept-btn px-6 py-2 rounded-full border border-primary text-primary font-label-lg bg-white hover:bg-primary hover:text-on-primary transition-all active:scale-95" onclick="filterDept('all')">All Departments</button>
+<button class="dept-btn px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-lg bg-white hover:border-primary hover:text-primary transition-all" onclick="filterDept('science')">Science</button>
+<button class="dept-btn px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-lg bg-white hover:border-primary hover:text-primary transition-all" onclick="filterDept('commerce')">Commerce</button>
+<button class="dept-btn px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-lg bg-white hover:border-primary hover:text-primary transition-all" onclick="filterDept('arts')">Arts</button>
+</div>
+<div class="relative w-full md:w-80 group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">search</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-xl border-outline-variant focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white shadow-sm transition-all outline-none" placeholder="Search by name or subject..." type="text">
 </div>
 </div>
 </section>
-<!-- Principal's Message -->
-<section class="py-section-gap-lg bg-surface">
-<div class="max-w-[1280px] mx-auto px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center bg-white rounded-xl shadow-sm border border-outline-variant/30 overflow-hidden">
-<div class="md:col-span-5 h-[500px]">
-<img class="w-full h-full object-cover" data-alt="A formal professional portrait of a distinguished college principal in an academic gown, standing against a backdrop of a mahogany-paneled office with a leather chair and stacked books. The expression is warm yet authoritative. The lighting is soft and cinematic, emphasizing professional prestige and institutional trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOBKwaCwDKJlFj70ufOSt9KplWhAKpoYCFG2FTlQZ1bEmbcxC666YkvKYchiGRw8DT5mx7TBJGfhEV2vJsm6LG7bvgf2QkH_D6NapHgAFUEJ3-g47i78zhFB4ukUGp5PDu8aDfH5IwcGxEm7KeQv9P19k26OHEoF-agOf8NPgtnxKHtQVEaJOgtNIBtCDwCHYW5IqPtnTE3eQlx05Iwpp5ksSeQuhrWwgnMbXwfgLm0DMe_yQksTWWpiaVEz6ZRtotxRDCLhx_lFc"/>
-</div>
-<div class="md:col-span-7 p-8 md:p-12">
-<span class="material-symbols-outlined text-secondary text-5xl mb-6">format_quote</span>
-<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Leadership with Purpose</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 italic leading-relaxed">
-                        "At RDS, we believe that education is not just about imparting knowledge, but about igniting a passion for lifelong learning. Our faculty are chosen not just for their credentials, but for their commitment to nurturing the unique potential within every student."
-                    </p>
-<div class="mb-8">
-<p class="font-headline-md text-headline-md text-primary">Dr. Anirudh Sharma</p>
-<p class="font-body-md text-body-md text-secondary font-semibold">Principal, RDS College</p>
-</div>
-<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all group" href="about.html">
-                        Read the Full Message 
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
+<!-- Faculty Bento Grid -->
+<section class="py-24 bg-surface-base">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="faculty-grid">
+<!-- Faculty Card 1 - Science (Head) -->
+<div class="faculty-card glass-panel rounded-2xl overflow-hidden flex flex-col shadow-xl group transition-all duration-500 hover:-translate-y-2 lg:col-span-2 lg:flex-row h-full border-white/40 duration-700 opacity-100 translate-y-0" data-dept="science">
+<div class="lg:w-2/5 relative overflow-hidden h-64 lg:h-full">
+<img class="faculty-image w-full h-full object-cover transition-transform duration-700" data-alt="A professional studio portrait of a senior male professor with grey hair and glasses, wearing a dark navy academic suit, smiling warmly. The background is a soft-focus library with leather-bound books. High-end editorial lighting, 8k resolution, prestigious academic atmosphere with deep blues and warm gold tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyx8uQaZwfiO25rU8KxL4zqMG9gmJguVy62CqlvEvk6y9y_BmY1dkDL-6330rZUvsB4zJYbn0kzrIF9iFzb0hwtxZ8de7iD77H30BnFmSYBUSacKjAH9iBOqZPU2Pmt4QAuVAMVvofzbHDNF4adhb1Hk2Zpzm-KfGqSOLgsptt5dk1sQmVwBYMZ5fX0mLgYX4mfie9C3J6ONMqN_Z0dRBEeU1EJXTCcc30Xbnc5wg9WLZOGTKk6f5i">
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-on-primary text-label-md rounded-md uppercase tracking-wider font-bold">HOD Science</span>
 </div>
 </div>
+<div class="p-8 lg:w-3/5 flex flex-col justify-center">
+<div class="mb-4">
+<span class="text-secondary font-label-lg uppercase tracking-widest text-xs font-bold">Physics Department</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mt-1">Dr. Rajesh K. Varma</h3>
+<p class="text-outline font-label-md">Ph.D, M.Sc (Gold Medalist), KSET Qualified</p>
 </div>
-</section>
-<!-- Faculty Directory -->
-<section class="py-section-gap-lg">
-<div class="max-w-[1280px] mx-auto px-gutter">
-<div class="text-center mb-16">
-<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Academic Departments</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Explore our directory of world-class educators categorized by their specialized fields of study.</p>
+<p class="text-on-surface-variant font-body-md mb-6 italic">
+                            "With 22 years of experience in quantum mechanics education, my mission is to bridge the gap between theoretical complex physics and practical innovation for young minds."
+                        </p>
+<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/20">
+<div class="flex gap-2">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">school</span>
 </div>
-<!-- Tabs/Filters -->
-<div class="flex flex-wrap justify-center gap-4 mb-12">
-<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-bold shadow-md transition-all">All Departments</button>
-<button class="px-8 py-3 rounded-full bg-white border border-outline-variant text-on-surface-variant font-medium hover:border-primary hover:text-primary transition-all">Science</button>
-<button class="px-8 py-3 rounded-full bg-white border border-outline-variant text-on-surface-variant font-medium hover:border-primary hover:text-primary transition-all">Commerce</button>
-<button class="px-8 py-3 rounded-full bg-white border border-outline-variant text-on-surface-variant font-medium hover:border-primary hover:text-primary transition-all">Languages</button>
-</div>
-<!-- Science Department -->
-<div class="mb-20">
-<div class="flex items-center gap-4 mb-8">
-<span class="h-1 w-12 bg-secondary rounded-full"></span>
-<h3 class="font-headline-lg text-headline-lg text-primary">Department of Science</h3>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Faculty Card 1 -->
-<div class="faculty-card group bg-white rounded-xl border border-outline-variant/30 overflow-hidden hover:shadow-xl transition-all duration-300">
-<div class="h-64 overflow-hidden">
-<img class="faculty-image w-full h-full object-cover transition-transform duration-500" data-alt="Close-up professional headshot of a female science professor in a modern white lab coat, with a blurred background of a clean biology laboratory. She is smiling confidently. Lighting is crisp and bright, aligning with a modern-premium educational brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqvuMAChWaA65SrBpFRydPilbsj6Z6twUPaRIRgK_DBkpjyOR-AhV3LJ3SA_pzooY0TWYA1G7icPkjK2sAve5EuIsn3VUS6G11no4UGnTDTI3jIAm1dzX_EL4vlfRE8m5RkLZsT4RlznVlef1wcFa_ySYtnvJrfGV4EpcetLeFUsO0l4HfKnkwliJHSs2_ZIOI9s_y6PRa2wPvZ9CxUVIcI_snvsoKtFmq8c_ejfsEnpv56Nceos9M6WtE3yXpmSyl-m_f9Pl2zoQ"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-label-sm uppercase mb-1">Physics</p>
-<h4 class="font-headline-md text-headline-md text-primary mb-2">Dr. Elena Rodriguez</h4>
-<div class="space-y-2">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">school</span>
-<span class="text-body-md font-body-md">Ph.D in Quantum Physics</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">work_history</span>
-<span class="text-body-md font-body-md">15+ Years Experience</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Faculty Card 2 -->
-<div class="faculty-card group bg-white rounded-xl border border-outline-variant/30 overflow-hidden hover:shadow-xl transition-all duration-300">
-<div class="h-64 overflow-hidden">
-<img class="faculty-image w-full h-full object-cover transition-transform duration-500" data-alt="Professional studio portrait of a male chemistry lecturer wearing a smart navy blazer and glasses. The background is a neutral light gray gradient. His expression is friendly and approachable. High-end portrait photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARqYQLcAeMnWwutN5eb8NA8bYCwyMogJR4hwPZ6Y986oBJXxKmBxiOUXVVLxitzttgFnvHBIb5eyIYlfYnoUXtUHZCrZAPB9BB7MWvgjcaeCwZJqMfSX513Nyhki2G90iGV6EEOtYBJSQO1zAEfVlBE7TB8F-IdJR4gc1v9RxLixImby9PpzX_Y7-1Xa0rqFQz24ePyBNSCdkPr2ko7FXfUxjRfWmG3Qzkzs3vJCpFZq1HfJREPpezMOmjvifA40gqtV0pQ5-Osl0"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-label-sm uppercase mb-1">Chemistry</p>
-<h4 class="font-headline-md text-headline-md text-primary mb-2">Prof. Marcus Chen</h4>
-<div class="space-y-2">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">school</span>
-<span class="text-body-md font-body-md">M.Sc, Organic Chemistry</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">work_history</span>
-<span class="text-body-md font-body-md">12 Years Experience</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Faculty Card 3 -->
-<div class="faculty-card group bg-white rounded-xl border border-outline-variant/30 overflow-hidden hover:shadow-xl transition-all duration-300">
-<div class="h-64 overflow-hidden">
-<img class="faculty-image w-full h-full object-cover transition-transform duration-500" data-alt="Headshot of a middle-aged female mathematics professor with a kind smile, wearing professional business attire. Subtle bookshelf background. Clean, high-key lighting creates a professional and trustworthy aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrjWBtudxWSZJ4Z065jE1YuidhGZ97MhH7TNA4ri_lBRHXY0MXd9ihKMAujAz2CdDbvSHlOcLS-SL6fx7kFQE8IQmpVg-u6_4to-6B2tSAStXX1bOmmFVApAdw4NUUsx6AB5OqqDpCzJSznQqvjuQYImz6t9x0Q6a8axlw_H4l4D46xbDsUVvREuom_VZxxKEl_yvyTf7WZHyHHv9qEmswdTO6VcbwDSIA6H_SuTeWn3FunxNHbJTZWJeQJKBpCKXWI6veWqgjTQE"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-label-sm uppercase mb-1">Mathematics</p>
-<h4 class="font-headline-md text-headline-md text-primary mb-2">Dr. Sarah Thompson</h4>
-<div class="space-y-2">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">school</span>
-<span class="text-body-md font-body-md">Ph.D in Pure Mathematics</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">work_history</span>
-<span class="text-body-md font-body-md">20 Years Experience</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Faculty Card 4 -->
-<div class="faculty-card group bg-white rounded-xl border border-outline-variant/30 overflow-hidden hover:shadow-xl transition-all duration-300">
-<div class="h-64 overflow-hidden">
-<img class="faculty-image w-full h-full object-cover transition-transform duration-500" data-alt="A focused professional portrait of a male computer science instructor in a modern office setting. He is looking at the camera with a confident, tech-savvy expression. Soft indoor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpkqhFb8Sus6yNocpeFzLdUDPZHkaZtAeQ7uNEbtU-NI3SC2vHwhmRDOuQegiRb29hkEHhIu_RfAtfN1T-dpCVahSEPI32hj6IuzlRvl1JqRvnEVgtIERfCgKato06l4zqkS0x1hrGTqqb1Xz4t3dkPc2AUDAy4jTGH0HZ-01YYRwz_VcCQqtQukhiQXzg-xRuVklEfrJUtr3Bfgj4W8WnuQ5S89VF952U002yl-uak-AmsX2yYZYocowEpjy-6utWuuNXVrIqFbo"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-label-sm uppercase mb-1">Comp. Science</p>
-<h4 class="font-headline-md text-headline-md text-primary mb-2">Mr. David Okafor</h4>
-<div class="space-y-2">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">school</span>
-<span class="text-body-md font-body-md">M.Tech, AI &amp; Robotics</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">work_history</span>
-<span class="text-body-md font-body-md">8 Years Experience</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Commerce Department -->
-<div class="mb-20">
-<div class="flex items-center gap-4 mb-8">
-<span class="h-1 w-12 bg-secondary rounded-full"></span>
-<h3 class="font-headline-lg text-headline-lg text-primary">Department of Commerce</h3>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="faculty-card group bg-white rounded-xl border border-outline-variant/30 overflow-hidden hover:shadow-xl transition-all duration-300">
-<div class="h-64 overflow-hidden">
-<img class="faculty-image w-full h-full object-cover transition-transform duration-500" data-alt="Professional female faculty member for commerce, wearing a tailored charcoal suit. She exudes corporate authority and academic expertise. Plain light background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB07SAogK9EVxXr91t17UFLAwj-PhWcrDwN5OIs2ywirZsgB3YfIetamtzvdZfB3Ffyc4SZ_d1bG6g-XVPOgBu6TmOYM8dVB-Gw4X-Q77F8btu4s4fGnZFmWzWNmzeHbyPMriwAnPnYqhhryu-Qwdr5WGcw3a8Cjo_C9E0UT-mN7a7uUTJmlDeo3tZr6r4HgG0z5BGe2dT-70ws73IF8KrF6KnYncN4cppHGt46dV8DiN-GtcP5kIFAB4BduSYDAb4FLLCG6hA0Jrs"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-label-sm uppercase mb-1">Economics</p>
-<h4 class="font-headline-md text-headline-md text-primary mb-2">Mrs. Linda Wu</h4>
-<div class="space-y-2">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">school</span>
-<span class="text-body-md font-body-md">MA Economics, MBA</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">work_history</span>
-<span class="text-body-md font-body-md">14 Years Experience</span>
-</div>
-</div>
-</div>
-</div>
-<div class="faculty-card group bg-white rounded-xl border border-outline-variant/30 overflow-hidden hover:shadow-xl transition-all duration-300">
-<div class="h-64 overflow-hidden">
-<img class="faculty-image w-full h-full object-cover transition-transform duration-500" data-alt="Male accounting professor with silver hair, wearing a white shirt and tie. Professional and experienced appearance. Soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVoWaoH9Uctu9VtDWt8MC9FzfHeNnOvCT19N0ArurmsCutFKvLlz0tLFk4QZoaRsXTWjY2SuSeZy4ZWURwMfgxOufOgbOjvCtHZfqrXz-hxLFlms3b5pAKXpN__GPnyk-81rxFJJg0OKA1JHziDj_fCew1B1bvjMHotgjPDIo7V7LHrP-7f8bwz8R-8TBWVP2TQxkZ0H48TOr_HvukJXGbjK7LlsfogTpyBcH16RC_xMdNscD-maPGp3xs18aoJ2nH6wze6AKHgVQ"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-label-sm uppercase mb-1">Accountancy</p>
-<h4 class="font-headline-md text-headline-md text-primary mb-2">Prof. Robert Miller</h4>
-<div class="space-y-2">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">school</span>
-<span class="text-body-md font-body-md">CPA, M.Com</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">work_history</span>
-<span class="text-body-md font-body-md">25 Years Experience</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Research & Achievements: Bento Grid -->
-<section class="py-section-gap-lg bg-surface-container-low">
-<div class="max-w-[1280px] mx-auto px-gutter">
-<div class="text-center mb-16">
-<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Research &amp; Academic Contributions</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Our faculty members are active contributors to the global academic community through research, publications, and innovative teaching methodologies.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<div class="md:col-span-2 md:row-span-2 p-8 bg-white rounded-2xl border border-outline-variant/20 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
 <div>
-<span class="material-symbols-outlined text-secondary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">terminal</span>
-<h4 class="font-headline-lg text-headline-lg text-primary mb-4">Published Research Papers</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">Over 50+ research papers published by our faculty in prestigious international journals including Nature, IEEE, and The Economist during the academic year 2023-24.</p>
-</div>
-<div class="flex items-center -space-x-3">
-<div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200"></div>
-<div class="w-12 h-12 rounded-full border-4 border-white bg-slate-300"></div>
-<div class="w-12 h-12 rounded-full border-4 border-white bg-slate-400"></div>
-<div class="flex items-center justify-center w-12 h-12 rounded-full border-4 border-white bg-primary text-on-primary text-label-sm font-bold">+12</div>
-</div>
-</div>
-<div class="md:col-span-2 p-8 bg-primary text-on-primary rounded-2xl shadow-lg relative overflow-hidden group">
-<div class="relative z-10">
-<h4 class="font-headline-md text-headline-md mb-2">Excellence in Teaching Award</h4>
-<p class="text-on-primary/80">Recognized by the State Education Board for 'Most Innovative Teaching Methodology' in Higher Secondary Education.</p>
-</div>
-</div>
-<div class="p-8 bg-white rounded-2xl border border-outline-variant/20 shadow-sm hover:border-secondary transition-all">
-<span class="material-symbols-outlined text-secondary mb-4">auto_stories</span>
-<h5 class="font-headline-md text-headline-md text-primary mb-2">5 Textbooks</h5>
-<p class="font-body-md text-body-md text-on-surface-variant">Authored by our faculty members and used as curriculum standards.</p>
-</div>
-<div class="p-8 bg-white rounded-2xl border border-outline-variant/20 shadow-sm hover:border-secondary transition-all">
-<span class="material-symbols-outlined text-secondary mb-4">emoji_events</span>
-<h5 class="font-headline-md text-headline-md text-primary mb-2">12 Ph.D Scholars</h5>
-<p class="font-body-md text-body-md text-on-surface-variant">Currently on our teaching board, providing expert mentorship.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-section-gap-lg">
-<div class="max-w-[1280px] mx-auto px-gutter">
-<div class="bg-primary-container rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
-<div class="relative z-10">
-<h2 class="font-headline-xl text-headline-xl text-on-primary-container mb-6">Join an Academic Community Built on Excellence</h2>
-<p class="font-body-lg text-body-lg text-on-primary-container/80 max-w-2xl mx-auto mb-10">Experience a transformative journey guided by the best minds in the industry. Admissions are now open for the upcoming academic session.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-<a class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105 active:scale-95 transition-all inline-block" href="admissions.html">Apply for Admission</a>
-<a class="bg-white/10 backdrop-blur-md border border-white/20 text-on-primary-container px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all inline-block" href="contact.html">Contact Us</a>
+<p class="text-xs text-outline uppercase font-bold">Mentoring</p>
+<p class="text-sm font-semibold text-primary">JEE &amp; NEET Aspirants</p>
 </div>
 </div>
 </div>
 </div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full mt-section-gap-lg bg-on-background dark:bg-surface-container-lowest">
-<div class="bg-primary dark:bg-surface-container h-1 w-full"></div>
-<div class="max-w-[1280px] mx-auto px-gutter py-section-gap-md grid grid-cols-1 md:grid-cols-4 gap-8">
-<div class="md:col-span-1">
-<a class="font-headline-md text-headline-md font-bold text-primary-fixed dark:text-on-primary-fixed mb-6 block" href="index.html">RDS College</a>
-<p class="text-surface-variant/80 font-body-md mb-6">Nurturing excellence and integrity in every student since 1998.</p>
+</div>
+<!-- Faculty Card 2 - Commerce -->
+<div class="faculty-card glass-panel rounded-2xl overflow-hidden flex flex-col shadow-lg border-white/40 transition-all duration-700 opacity-100 translate-y-0" data-dept="commerce">
+<div class="relative h-72 overflow-hidden">
+<img class="faculty-image w-full h-full object-cover transition-transform duration-700" data-alt="A medium shot of a professional woman in her late 30s, wearing a tailored cream blazer, holding a tablet and smiling confidently in a modern glass-walled office environment. The lighting is bright and airy, reflecting a premium light-mode corporate aesthetic. Soft blue and gold accents in the environment. Sophisticated and approachable academic vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCgOPebvcPBm90Yfnq3HPtAy5sebxy6uGYg4dyhEKHm2mlnBIZawHiUX4YccLmRFTEqhd66wo8WJciFObCEsv4Nlkd02NUTQjuABOPaFRxE9oaC_k1ZxwPdA4uDrjBz2SwCx2paVOUDU-22BhUO_9VrJEsSvu4heR4lrybm_JEyJuBG0hZPpjpK0FrKcLkDmyr_ANkrCRXjfXtuty0EPj3vu1D3jFZlAz-Zw2rXnDd3uT61W4Hs5wi">
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent">
+<span class="text-white text-label-md font-bold">NET Qualified</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<span class="text-secondary font-label-md font-bold uppercase tracking-tighter text-xs">Accountancy &amp; Taxation</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Prof. Ananya Iyer</h3>
+<p class="text-outline font-label-md mb-4">M.Com, M.Phil, NET Qualified</p>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Expert in modern taxation and fiscal policy. Ananya focuses on real-world case studies to help students master complex financial concepts.
+                        </p>
+<button class="mt-auto flex items-center gap-2 text-primary font-label-lg hover:gap-4 transition-all">
+                            View Profile <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 3 - Arts -->
+<div class="faculty-card glass-panel rounded-2xl overflow-hidden flex flex-col shadow-lg border-white/40 transition-all duration-700 opacity-100 translate-y-0" data-dept="arts">
+<div class="relative h-72 overflow-hidden">
+<img class="faculty-image w-full h-full object-cover transition-transform duration-700" data-alt="A portrait of an elderly distinguished scholar with a short beard, wearing a traditional silk vest over a formal white shirt. He is sitting in a sunlit atrium surrounded by green indoor plants. Warm, natural lighting, high-end cultural academic setting. Calm and wise expression. Rich textures and a palette of warm woods and navy blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVuJOsfSboyo_6yC-XUsGCKEbNPImxo1ZbrZVYFh1qUnA_jyoUAZjP-7KMLJSKN0IZYd28YBjLfkctxZK0tiRaVNa9wB0d5g42TNzldS5uXAR3mFCcom_41oBT0MZDhtDzFCiVF5dwAP03w52v96mMITd-qY68Qpfg0zoiDmxUdb11s5-MdiNt6blbWAtNgO2Spy2kHBMW3CebCINe87ieDVVS4vAsPddk3qtDt2yaimK-0KWVa4VV">
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<span class="text-secondary font-label-md font-bold uppercase tracking-tighter text-xs">Humanities &amp; Sociology</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Prof. Samuel David</h3>
+<p class="text-outline font-label-md mb-4">M.A., KSET Qualified</p>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            A veteran educator with over 30 years in social sciences. Prof. David is renowned for his philosophical approach to contemporary societal issues.
+                        </p>
+<button class="mt-auto flex items-center gap-2 text-primary font-label-lg hover:gap-4 transition-all">
+                            View Profile <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 4 - Science -->
+<div class="faculty-card glass-panel rounded-2xl overflow-hidden flex flex-col shadow-lg border-white/40 transition-all duration-700 opacity-100 translate-y-0" data-dept="science">
+<div class="relative h-72 overflow-hidden">
+<img class="faculty-image w-full h-full object-cover transition-transform duration-700" data-alt="A sharp, professional portrait of a young male scientist in a clean white lab coat standing in front of a high-tech chemistry laboratory. Neon blue highlights from laboratory equipment create a modern, technological feel. The lighting is crisp and cool-toned. Deep navy and sharp whites define the image. Professional and innovative educator look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoqVlz4eF_sv1w4PIpZ3o-GM8cTzo8er9AdXQ6a_-JLRAEHecSKC705e4jmhDClFRy8L46_yQtzqiY39Fy7tY2Vr0C2ArvF9qRQxGCqByaIgvV5KAFIED0v-MgRMbiQzOfq-41C_pkJEKfaUxpypCiSrfd04_p7siz-ISDjyJetHfbwChF5EMkRPgC5U47L-OTrFw_n6CRtwZD-RiPRyz1tUxVgl3QPd5UJn9FB9VJuHU4zhkB-12U">
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<span class="text-secondary font-label-md font-bold uppercase tracking-tighter text-xs">Chemistry</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Dr. Sonal Mehta</h3>
+<p class="text-outline font-label-md mb-4">Ph.D (IIT Bombay), NET Qualified</p>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Dr. Mehta leads our organic chemistry research wing and mentors students for competitive Olympiads with a 95% success rate.
+                        </p>
+<button class="mt-auto flex items-center gap-2 text-primary font-label-lg hover:gap-4 transition-all">
+                            View Profile <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 5 - Commerce -->
+<div class="faculty-card glass-panel rounded-2xl overflow-hidden flex flex-col shadow-lg border-white/40 lg:col-span-2 lg:flex-row transition-all duration-700 opacity-100 translate-y-0" data-dept="commerce">
+<div class="lg:w-1/3 relative h-64 lg:h-auto overflow-hidden">
+<img class="faculty-image w-full h-full object-cover transition-transform duration-700" data-alt="A medium shot of a distinguished woman in professional business attire, standing on a terrace overlooking a modern city skyline at dusk. Warm orange sky meeting deep blue city lights. High-end cinematography style. She exudes leadership and expertise. Corporate excellence theme with academic sophistication. 8k, photorealistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8zrjIiriQKBKT2JtkvByTUdvjf_2i43_VzoTCT194EeuTHx4A7LdgAOYzCNriHQTVF0yteOLS5ITndRhn83VHNwcD0kAahVOdicDHUhjovWSmyilzAKyZucxaPPyQmYQ1BQ3sz7WgWYZ9q1WlK-qZ8PtzngjDWL57LGBzEIvjyzxhs0WRtXUyTo_p9UELrHEOHlDwN9xrdBVe2VgkuaFJ8z4Ty8NQ7OegQVgGL4mZcSOOQhqnxp-A">
+</div>
+<div class="p-8 lg:w-2/3 flex flex-col justify-center">
+<span class="text-secondary font-label-lg font-bold uppercase text-xs">Business Studies</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mt-1">Prof. Meenakshi Sundaram</h3>
+<p class="text-outline font-label-md mb-4">MBA (Finance), NET Qualified, 15+ Yrs Industry Exp</p>
+<p class="text-on-surface-variant font-body-md mb-6">
+                            Combining corporate leadership with academic rigor, Prof. Meenakshi provides students with invaluable insights into the global economy and entrepreneurship.
+                        </p>
 <div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-surface-variant/10 flex items-center justify-center text-surface-variant hover:bg-primary-fixed hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined">public</span>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10">
+<p class="text-xs text-primary font-bold">Specialization</p>
+<p class="text-sm">Strategic Management</p>
+</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10">
+<p class="text-xs text-primary font-bold">Mentorship</p>
+<p class="text-sm">CA Foundation</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mentorship Focus -->
+<section class="py-24 cinematic-gradient text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Beyond the Classroom: The RDS Mentorship Model</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-2xl bg-secondary-container flex items-center justify-center text-primary shadow-lg shadow-black/20">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">1:1 Career Guidance</h4>
+<p class="text-on-primary/70 font-body-md">Personalized roadmap sessions with faculty to align academic choices with professional aspirations.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-2xl bg-secondary-container flex items-center justify-center text-primary shadow-lg shadow-black/20">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">biotech</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Practical Incubation</h4>
+<p class="text-on-primary/70 font-body-md">Faculty-led workshops in state-of-the-art labs, focusing on experimental learning and critical thinking.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-2xl bg-secondary-container flex items-center justify-center text-primary shadow-lg shadow-black/20">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Peer Learning Circles</h4>
+<p class="text-on-primary/70 font-body-md">Department-specific clubs moderated by senior educators to foster collaborative scholarship.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="glass-panel p-4 rounded-3xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+<img class="w-full rounded-2xl" data-alt="A high-angle photo of a professor sitting at a large oak table with four diverse college students. They are looking at a set of architectural drawings and digital tablets together. Sunlight streams through large windows. The mood is collaborative and intellectually vibrant. Premium campus setting. Scholarly and warm aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpvRGSSyWUozHosWORN0FN2_XS3iqoG44wgW0Afg-TuuEKqpXEdolZ8sk8klVDEhlNvx4BYfVy4futEtFaTlTpBpbieZ662oPWUuDkPUyBKcsaEvS4usrfTDXqhWOkrvsPAI9GxLj7weg3CbQHNRkrVQvovSQjW-KMpZmCo5vuSlNaMXsSxabsZf90euO_MV3ezsNNhODhUTpJ5nsB0JthD6J-S5qjua7r0TT02CQKNv5KwSFi6yU3">
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-secondary-container/20 blur-3xl rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-desktop flex flex-col items-center gap-gutter bg-primary text-on-primary border-t border-glass-border">
+<div class="max-w-container-max w-full grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="md:col-span-2">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed mb-6">RDS Independent PU College</div>
+<p class="text-on-primary-fixed-variant font-body-md max-w-sm">
+                    Dedicated to academic excellence and character building since 2000. Empowering students with premium education and holistic development.
+                </p>
+</div>
+<div>
+<h4 class="font-label-lg text-on-primary mb-6 uppercase tracking-widest">Quick Links</h4>
+<div class="flex flex-col gap-4"><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="calendar.html">Academic Calendar</a><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="faculty.html">Faculty Directory</a><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="map.html">Campus Map</a><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="contact.html">Contact Us</a></div>
+</div>
+<div>
+<h4 class="font-label-lg text-on-primary mb-6 uppercase tracking-widest">Legal</h4>
+<div class="flex flex-col gap-4"><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="privacy.html">Privacy Policy</a><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="terms.html">Terms of Service</a></div>
+</div>
+</div>
+<div class="w-full pt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-on-primary-fixed-variant text-sm">© 2026 RDS Independent PU College. All rights reserved. Established 2000.</p>
+<div class="flex gap-6">
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-secondary-container hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-secondary-container hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
 </a>
 </div>
-</div>
-<div>
-<h5 class="text-primary-fixed font-bold mb-6">Quick Links</h5>
-<ul class="space-y-4">
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="events.html">Academic Calendar</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="downloads.html">Student Portal</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="faculty.html">Faculty Directory</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-primary-fixed font-bold mb-6">Support</h5>
-<ul class="space-y-4">
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="about.html">Privacy Policy</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="about.html">Terms of Service</a></li>
-<li><a class="text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="news.html">News &amp; Updates</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-primary-fixed font-bold mb-6">Contact</h5>
-<p class="text-surface-variant/80 font-body-md mb-2">123 Academic Square, North Campus</p>
-<p class="text-surface-variant/80 font-body-md mb-2">info@rdscollege.edu.in</p>
-<p class="text-surface-variant/80 font-body-md">+91 98765 43210</p>
-<a class="text-secondary-fixed hover:underline font-body-md mt-4 block" href="contact.html">Visit Contact Page</a>
-</div>
-</div>
-<div class="border-t border-surface-variant/10 py-8 text-center">
-<p class="text-surface-variant/60 font-body-md">© 2024 RDS Independent PU College. All rights reserved.</p>
 </div>
 </footer>
 <script>
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+        function filterDept(dept) {
+            const cards = document.querySelectorAll('.faculty-card');
+            const buttons = document.querySelectorAll('.dept-btn');
+            
+            // Update buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-on-primary', 'border-primary');
+                btn.classList.add('bg-white', 'text-on-surface-variant', 'border-outline-variant');
+            });
+            event.currentTarget.classList.add('bg-primary', 'text-on-primary', 'border-primary');
+            event.currentTarget.classList.remove('bg-white', 'text-on-surface-variant', 'border-outline-variant');
+
+            // Update cards
+            cards.forEach(card => {
+                if (dept === 'all' || card.dataset.dept === dept) {
+                    card.style.display = 'flex';
+                    card.classList.add('animate-fade-in');
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightweight entrance animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.faculty-card').forEach(card => {
+                card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(card);
             });
         });
-    });
+    </script>
 
-    // Sticky header transition
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-            header.classList.add('shadow-lg');
-        } else {
-            header.classList.remove('shadow-lg');
-        }
-    });
-</script>
+
+
+
 </body></html>
