@@ -14,18 +14,17 @@ images = [
     'images/vid-teaching-hori.png',
 ]
 pattern = re.compile(r'https://lh3\.googleusercontent\.com[^\)"\'\s]+')
-idx = 0
-replaced = 0
+idx = [0]
+replaced = [0]
 for path in sorted(pathlib.Path('.').glob('*.html')):
     text = path.read_text(encoding='utf-8')
     def repl(match):
-        nonlocal idx, replaced
-        replacement = images[idx % len(images)]
-        idx += 1
-        replaced += 1
+        replacement = images[idx[0] % len(images)]
+        idx[0] += 1
+        replaced[0] += 1
         return replacement
     new_text = pattern.sub(repl, text)
     if new_text != text:
         path.write_text(new_text, encoding='utf-8')
         print(f'Updated {path} with {new_text.count("images/")} local references')
-print(f'Total replaced remote URLs: {replaced}')
+print(f'Total replaced remote URLs: {replaced[0]}')
