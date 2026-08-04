@@ -269,7 +269,7 @@
 <section class="mb-32 reveal-hidden reveal-visible" id="founders">
 <div class="glass-card rounded-[32px] p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center shadow-xl">
 <div class="w-full md:w-1/3 aspect-square relative rounded-2xl overflow-hidden group">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A dignified black and white portrait of an elderly scholarly man, Late Shri Tammanna Parshi, the founder of RDS College. He is wearing traditional Indian attire with a warm, wise expression. The lighting is soft and cinematic, highlighting his legacy. Professional studio photography style with a subtle grain." src="images/college-from-ground.jpg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A dignified black and white portrait of an elderly scholarly man, Late Shri Tammanna Parshi, the founder of RDS College. He is wearing traditional Indian attire with a warm, wise expression. The lighting is soft and cinematic, highlighting his legacy. Professional studio photography style with a subtle grain." src="images/rds-founder.png">
 <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
 <div class="absolute bottom-6 left-6 text-on-primary">
 <p class="font-headline-md text-headline-md">Late Shri Tammanna Parshi</p>
@@ -288,20 +288,20 @@
 </section>
 <!-- History Timeline -->
 <section class="mb-32" id="history">
-<div class="flex flex-col items-center mb-16 text-center reveal-hidden reveal-visible">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Journey Since 2000</h2>
+<div class="flex flex-col items-center mb-16 text-center history-reveal">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Journey Since <span class="counter" data-target="2000">0</span></h2>
 <div class="h-1.5 w-24 bg-tertiary-container rounded-full"></div>
 </div>
 <div class="relative">
 <div class="hidden md:block absolute left-1/2 -translate-x-1/2 h-full w-px bg-outline-variant/30"></div>
 <div class="space-y-12">
 <!-- Milestone 1 -->
-<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0 reveal-hidden reveal-visible">
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0 history-reveal">
 <div class="md:w-1/2 md:pr-12 md:text-right">
 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-l-4 border-primary">
-<span class="font-headline-md text-headline-md text-primary-container">2000</span>
+<span class="font-headline-md text-headline-md text-primary-container counter" data-target="2000">0</span>
 <h3 class="font-headline-md text-headline-md mb-2">The Foundation</h3>
-<p class="text-on-surface-variant">RDS College opened its doors with a batch of <span class="font-bold text-primary">120</span> students and a vision for transformation.</p>
+<p class="text-on-surface-variant">RDS College opened its doors with a batch of <span class="font-bold text-primary counter" data-target="120">0</span> students and a vision for transformation.</p>
 </div>
 </div>
 <div class="z-10 w-10 h-10 rounded-full bg-primary border-4 border-surface-base flex items-center justify-center">
@@ -310,10 +310,10 @@
 <div class="md:w-1/2 md:pl-12"></div>
 </div>
 <!-- Milestone 2 -->
-<div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-0 reveal-hidden reveal-visible">
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-0 history-reveal">
 <div class="md:w-1/2 md:pl-12 text-left">
 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-secondary">
-<span class="font-headline-md text-headline-md text-primary-container">2012</span>
+<span class="font-headline-md text-headline-md text-primary-container counter" data-target="2012">0</span>
 <h3 class="font-headline-md text-headline-md mb-2">Expansion &amp; Innovation</h3>
 <p class="text-on-surface-variant">Introduction of advanced science laboratories and a state-of-the-art digital library to meet global standards.</p>
 </div>
@@ -324,12 +324,12 @@
 <div class="md:w-1/2 md:pr-12"></div>
 </div>
 <!-- Milestone 3 -->
-<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0 reveal-hidden reveal-visible">
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0 history-reveal">
 <div class="md:w-1/2 md:pr-12 md:text-right">
 <div class="glass-card p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-l-4 border-tertiary">
-<span class="font-headline-md text-headline-md text-primary-container">2026</span>
-<h3 class="font-headline-md text-headline-md mb-2">26+ Years of Excellence</h3>
-<p class="text-on-surface-variant">Consistently ranking among the top institutions with over <span class="font-bold text-primary">52,000</span> students nurtured and alumni in global leadership roles.</p>
+<span class="font-headline-md text-headline-md text-primary-container"><span class="counter" data-target="2026">0</span></span>
+<h3 class="font-headline-md text-headline-md mb-2"><span class="counter" data-target="26">0</span>+ Years of Excellence</h3>
+<p class="text-on-surface-variant">Consistently ranking among the top institutions with over <span class="font-bold text-primary counter" data-target="52000">0</span> students nurtured and alumni in global leadership roles.</p>
 </div>
 </div>
 <div class="z-10 w-10 h-10 rounded-full bg-tertiary-container border-4 border-surface-base flex items-center justify-center">
@@ -560,5 +560,42 @@
     document.head.appendChild(style);
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counters = entry.target.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    if (!counter.classList.contains('active')) {
+                        counter.classList.add('active');
+                        const target = +counter.getAttribute('data-target');
+                        const duration = 2000; // 2 seconds
+                        const startTime = performance.now();
+
+                        function animate(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const val = Math.floor(progress * target);
+                            
+                            // Format with commas ONLY for 10,000+ (so 52,000 gets commas, but 2000, 2012, 2026 stay clean)
+                            counter.innerText = target >= 10000 ? val.toLocaleString('en-US') : val;
+
+                            if (progress < 1) {
+                                requestAnimationFrame(animate);
+                            } else {
+                                counter.innerText = target >= 10000 ? target.toLocaleString('en-US') : target;
+                            }
+                        }
+                        requestAnimationFrame(animate);
+                    }
+                });
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.history-reveal').forEach(el => observer.observe(el));
+});
+</script>
 
 </body></html>
